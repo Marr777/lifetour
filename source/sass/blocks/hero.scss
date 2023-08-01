@@ -1,0 +1,43 @@
+.hero {
+
+}
+
+.hero__slides {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.hero__slide {
+  padding-top: 182px;
+  padding-bottom: 80px;
+  min-height: 800px;
+}
+
+.hero__pagination {
+  position: absolute;
+  z-index: 2;
+  bottom: 121px;
+
+  width: 100%;
+  display: flex;
+  column-gap: 15px;
+  justify-content: end;
+  padding-right: 120px;
+}
+
+.hero__pagination-bullet {
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+  border: 1px solid $color-default-white;
+
+  cursor: pointer;
+
+  &--active {
+    border: none;
+    background-color: $color-default-white;
+  }
+}

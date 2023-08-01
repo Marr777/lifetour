@@ -1,0 +1,132 @@
+.hero-slide {
+  color: $color-default-white;
+
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+  &--one {
+    background-image: $slider-overlay, url("../img/hero/hero-1-bg-desktop.jpg");
+  }
+
+  &--two {
+    background-image: $slider-overlay, url("../img/hero/hero-2-bg-desktop.jpg");
+  }
+
+  &--three {
+    background-image: $slider-overlay, url("../img/hero/hero-3-bg-desktop.jpg");
+  }
+
+  h3 {
+    position: relative;
+    z-index: 5;
+
+    margin: 0 0 23px;
+    grid-column: 1/-1;
+
+    font-size: 77px;
+    font-weight: 800;
+    line-height: 77px;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 1px;
+  }
+
+  p {
+    grid-column: 1/2;
+    width: 63%;
+    margin: 0 0 37px;
+
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+
+.hero-slide__btn {
+  width: 220px;
+}
+
+.hero-slide__btn,
+.hero-slide__info {
+  grid-column: 1/2;
+}
+
+.hero-slide__info {
+  margin-top: 21%;
+  display: flex;
+  gap: 10px;
+
+  b {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px
+  }
+}
+
+.hero-slide__info-text {
+  position: relative;
+
+  padding: 8px 19px 10px 40px;
+
+  border: 1px solid $white-opacity;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 19px;
+
+
+    width: 12px;
+    height: 12px;
+    margin: auto 0;
+
+    background-repeat: no-repeat;
+
+    content: "";
+  }
+
+  &--duration {
+    &::before {
+      background-image: url(../img/svg/hero-moon.svg);
+    }
+  }
+
+  &--level {
+    &::before {
+      background-image: url(../img/svg/hero-level.svg);
+    }
+  }
+}
+
+.hero-slide__media {
+  position: relative;
+
+  grid-column: 2/3;
+  grid-row: 2/5;
+  width: 482px;
+  height: 317px;
+  transform: translateY(-58px);
+}
+
+.hero-slide__video-btn {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+
+  margin: auto;
+
+  &--play {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  svg {
+    fill: $color-default-white;
+
+    transition: fill $trans-default;
+  }
+}

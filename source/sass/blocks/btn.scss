@@ -1,22 +1,42 @@
 .btn {
-  display: inline-flex;
-  padding: 10px 20px;
+  display: block;
 
   color: $color-default-white;
 
   border: none;
   cursor: pointer;
+  user-select: none;
 
-  transition: opacity $trans-default;
+  &--primary {
+    padding: 21px 0;
 
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: center;
+
+    background-color: $color-secondary;
+  }
+
+  &--play {
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    border-radius: 50%;
+    border: 1px solid $color-default-white;
+    background-color: rgb(255, 255, 255, 0.2);
+
+    transition: background-color $trans-default;
+  }
 
   &:disabled {
     opacity: 0.5;
 
     pointer-events: none;
-  }
-
-  @include hover-focus {
-    opacity: 0.8;
   }
 }

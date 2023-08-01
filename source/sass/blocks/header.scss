@@ -1,9 +1,16 @@
 .header {
-  padding-top: 40px;
+  position: absolute;
+  z-index: 2;
+
+  width: 100%;
+
+  padding-top: 39px;
 
   color: $color-default-white;
 
-  background-color: #6b90b6; // del later
+  a {
+    color: inherit;
+  }
 
   @include vp-1199 {
     padding-top: 30px;
@@ -17,11 +24,9 @@
     @include vp-1199 {
       padding-bottom: 70px;
 
-      background-color: $color-default-white;
+      color: $color-primary;
 
-      .header__phone-link {
-        color: $color-primary;
-      }
+      background-color: $color-default-white;
     }
   }
 }
@@ -112,7 +117,6 @@
   font-size: 18px;
   font-weight: 600;
   line-height: 18px;
-  color: $color-default-white;
 
   @include vp-1199 {
     font-size: 16px;

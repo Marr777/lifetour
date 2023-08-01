@@ -19,6 +19,7 @@
 
 <body>
   <div class="wrapper">
+
     <!-- header--open -->
     <header class="header">
       <div class="container">
@@ -36,22 +37,104 @@
           <!-- header__nav--open -->
           <nav class="header__nav">
             <ul>
-              <li>Туры</li>
-              <li>Обучение</li>
-              <li>О нас</li>
-              <li>Отзывы</li>
-              <li>Фотографии</li>
-              <li>Контакты</li>
+              <li>
+                <a href="#tours">Туры</a>
+              </li>
+              <li>
+                <a href="#training">Обучение</a>
+              </li>
+              <li>
+                <a href="#about">О нас</a>
+              </li>
+              <li>
+                <a href="#feedback">Отзывы</a>
+              </li>
+              <li>
+                <a href="#gallery">Фотографии</a>
+              </li>
+              <li>
+                <a href="#contacts">Контакты</a>
+              </li>
             </ul>
           </nav>
           <a class="header__phone-link" href="tel:+78007253232">8 800 725 32 32</a>
         </div>
       </div>
     </header>
-    <main>
-      <section class="hero">
-        <div class="container">
 
+    <main>
+      <h1 class="visually-hidden">Организация походов в горы LifeTour.</h1>
+      <section class="hero">
+        <h2 class="visually-hidden">Промо-туры.</h2>
+        <div class="hero__swiper swiper">
+          <ul class="hero__slides swiper-wrapper" aria-label="Список промо-туров.">
+            <li class="hero__slide hero-slide hero-slide--one swiper-slide">
+
+              <div class="container container--hero">
+                <h3>Захватывающие <br>вершины Кавказа</h3>
+                <div class="hero-slide__media">
+                  <video poster="img/hero/video-poster.jpg" width="482" height="317" data-name="video"
+                    preload="auto" aria-label="Видео про курсы Html Academy.">
+                    <source src="video/video-mp4.mp4" type="video/mp4">
+                    <source src="video/video-ogg.ogg" type="video/ogg">
+                    <source src="video/video-webm.webm" type="video/webm">
+                  </video>
+                  <button class="hero-slide__video-btn btn btn--play" type="button" data-btn="video"
+                    aria-label="Воспроизвести видео.">
+                    <svg width="12" height="22" viewBox="0 0 12 22" aria-hidden="true">
+                      <use href="img/sprite.svg#play" />
+                    </svg>
+                  </button>
+                </div>
+                <p>В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете через потрясающие ландшафты и&nbsp;совершите
+                  восход на&nbsp;вершину горы Чегет.</p>
+                <a class="hero-slide__btn btn btn--primary" href="#">Смотреть тур</a>
+                <div class="hero-slide__info">
+                  <div class="hero-slide__info-text hero-slide__info-text--duration">
+                    <b>6&nbsp;дней/5&nbsp;ночей</b>
+                  </div>
+                  <di class="hero-slide__info-text hero-slide__info-text--level">
+                    <b>Высокая сложность</b>
+                  </di>
+                </div>
+              </div>
+            </li>
+            <li class="hero__slide hero-slide hero-slide--two swiper-slide">
+              <div class="container container--hero">
+                <h3>Невероятная <br>природа Камчатки</h3>
+                <div class="hero-slide__media"></div>
+                <p>Незабываемое приключение, во&nbsp;время которого вы&nbsp;отправитесь в&nbsp;путешествие
+                  по&nbsp;одному из&nbsp;самых нетронутых уголков дикой природы в&nbsp;мире.</p>
+                <a class="hero-slide__btn btn btn--primary" href="#">Смотреть тур</a>
+                <div class="hero-slide__info">
+                  <div class="hero-slide__info-text hero-slide__info-text--duration">
+                    <b>9&nbsp;дней/10&nbsp;ночей</b>
+                  </div>
+                  <div class="hero-slide__info-text hero-slide__info-text--level">
+                    <b>Средняя сложность</b>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="hero__slide hero-slide hero-slide--three swiper-slide">
+              <div class="container container--hero">
+                <h3>Магические пейзажи <br>Алтайского Края</h3>
+                <div class="hero-slide__media"></div>
+                <p>Алтайский трекинг-тур&nbsp;&mdash; это захватывающее приключение с&nbsp;посещением магических
+                  и&nbsp;захватывающих дух ландшафтов Алтайских гор.</p>
+                <a class="hero-slide__btn btn btn--primary" href="#">Смотреть тур</a>
+                <div class="hero-slide__info">
+                  <div class="hero-slide__info-text hero-slide__info-text--duration">
+                    <b>8&nbsp;дней/7&nbsp;ночей</b>
+                  </div>
+                  <div class="hero-slide__info-text hero-slide__info-text--level">
+                    <b>Легкая сложность</b>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="hero__pagination"></div>
         </div>
       </section>
     </main>
