@@ -3,10 +3,13 @@
   z-index: 2;
 
   width: 100%;
-
   padding-top: 39px;
 
   color: $color-default-white;
+
+  background-color: $color-transparent;
+
+  transition: background-color 0.1s ease-in-out;
 
   a {
     color: inherit;
@@ -21,12 +24,26 @@
   }
 
   &--open {
-    @include vp-1199 {
-      padding-bottom: 70px;
+    padding: 0;
+    height: 100%;
+    background-color: $burger-overlay;
 
-      color: $color-primary;
+    cursor: pointer;
 
-      background-color: $color-default-white;
+    .header__inner {
+      @include vp-1199 {
+        padding: 30px 0 70px;
+
+        color: $color-primary;
+
+        background-color: $color-default-white;
+
+        cursor: auto;
+      }
+
+      @include vp-767 {
+        padding: 15px 0 47px;
+      }
     }
   }
 }
@@ -108,6 +125,15 @@
       font-weight: 700;
       line-height: 16px;
       letter-spacing: 0.64px;
+
+      @include vp-767 {
+        margin-top: 41px;
+        row-gap: 23px;
+
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.56px;
+      }
     }
   }
 }
@@ -126,6 +152,7 @@
   @include vp-767 {
     grid-column: 2/3;
     justify-self: end;
+    align-self: start;
 
     font-size: 14px;
     line-height: 14px;
@@ -148,6 +175,8 @@
     border: none;
     background-color: $color-transparent;
 
+    transition: background-color $trans-default;
+
     cursor: pointer;
 
     &::after,
@@ -159,6 +188,8 @@
 
       background-color: $color-default-white;
 
+      transition: background-color $trans-default;
+
       content: "";
     }
   }
@@ -167,6 +198,10 @@
     .header__burger-line {
       width: 100%;
     }
+  }
+
+  @include vp-767 {
+    transform: translateY(-7px);
   }
 
   &--open {
