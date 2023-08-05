@@ -1,7 +1,3 @@
-.hero {
-
-}
-
 .hero__slides {
   margin: 0;
   padding: 0;
@@ -13,18 +9,40 @@
   padding-top: 182px;
   padding-bottom: 80px;
   min-height: 800px;
+
+  @include vp-1199 {
+    padding-top: 173px;
+    min-height: 1024px;
+  }
+
+  @include vp-767 {
+    padding-top: 139px;
+    min-height: 568px;
+  }
 }
 
 .hero__pagination {
   position: absolute;
   z-index: 2;
-  bottom: 121px;
+  bottom: 96px;
 
   width: 100%;
   display: flex;
   column-gap: 15px;
   justify-content: end;
   padding-right: 120px;
+
+  @include vp-1199 {
+    bottom: 89px;
+
+    padding: 0;
+    justify-content: center;
+  }
+
+  @include vp-767 {
+    bottom: 39px;
+    column-gap: 12px;
+  }
 }
 
 .hero__pagination-bullet {
@@ -39,5 +57,10 @@
   &--active {
     border: none;
     background-color: $color-default-white;
+  }
+
+  @include vp-767 {
+    width: 8px;
+    height: 8px;
   }
 }

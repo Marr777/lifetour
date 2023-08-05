@@ -25,7 +25,7 @@
       <div class="container">
         <div class="header__wrapper">
           <!-- header__burger-btn--open -->
-          <button class="header__burger-btn" type="button" aria-label="Открыть меню.">
+          <button class="header__burger-btn" type="button" aria-label="Открыть меню." data-name="burger-btn">
             <span class="header__burger-line"></span>
           </button>
           <!-- header__logo-link--open -->
@@ -72,9 +72,12 @@
 
               <div class="container container--hero">
                 <h3>Захватывающие <br>вершины Кавказа</h3>
-                <div class="hero-slide__media">
-                  <video poster="img/hero/video-poster.jpg" width="482" height="317" data-name="video"
-                    preload="auto" aria-label="Видео про курсы Html Academy.">
+                <p>В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете через потрясающие ландшафты и&nbsp;совершите
+                  восход на&nbsp;вершину горы Чегет.</p>
+                <a class="hero-slide__btn btn btn--primary" href="#">Смотреть тур</a>
+                <div class="hero-slide__media hero-slide__media--video">
+                  <video poster="img/hero/video-poster.jpg" width="482" height="317" data-name="video" preload="auto"
+                    aria-label="Видео про курсы Html Academy.">
                     <source src="video/video-mp4.mp4" type="video/mp4">
                     <source src="video/video-ogg.ogg" type="video/ogg">
                     <source src="video/video-webm.webm" type="video/webm">
@@ -86,9 +89,6 @@
                     </svg>
                   </button>
                 </div>
-                <p>В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете через потрясающие ландшафты и&nbsp;совершите
-                  восход на&nbsp;вершину горы Чегет.</p>
-                <a class="hero-slide__btn btn btn--primary" href="#">Смотреть тур</a>
                 <div class="hero-slide__info">
                   <div class="hero-slide__info-text hero-slide__info-text--duration">
                     <b>6&nbsp;дней/5&nbsp;ночей</b>
@@ -102,10 +102,24 @@
             <li class="hero__slide hero-slide hero-slide--two swiper-slide">
               <div class="container container--hero">
                 <h3>Невероятная <br>природа Камчатки</h3>
-                <div class="hero-slide__media"></div>
                 <p>Незабываемое приключение, во&nbsp;время которого вы&nbsp;отправитесь в&nbsp;путешествие
-                  по&nbsp;одному из&nbsp;самых нетронутых уголков дикой природы в&nbsp;мире.</p>
+                  по&nbsp;одному из&nbsp;самых нетронутых уголков дикой природы&nbsp;в мире.</p>
                 <a class="hero-slide__btn btn btn--primary" href="#">Смотреть тур</a>
+                <div class="hero-slide__media hero-slide__media--picture">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 1199px)"
+                      srcset="img/hero/photo-cards-tablet.webp 1x, img/hero/photo-cards-tablet@2x.webp 2x" width="442"
+                      height="365">
+                    <source type="image/webp"
+                      srcset="img/hero/photo-cards-desktop.webp 1x, img/hero/photo-cards-desktop@2x.webp 2x" width="410"
+                      height="459">
+                    <source media="(max-width: 1199px)"
+                      srcset="img/hero/photo-cards-tablet.png 1x, img/hero/photo-cards-tablet@2x.png 2x" width="442"
+                      height="365">
+                    <img src="img/hero/photo-cards-desktop.png" srcset="img/hero/photo-cards-desktop@2x.png" width="410"
+                      height="459" alt="Фотография походов на Камчатку.">
+                  </picture>
+                </div>
                 <div class="hero-slide__info">
                   <div class="hero-slide__info-text hero-slide__info-text--duration">
                     <b>9&nbsp;дней/10&nbsp;ночей</b>
@@ -119,10 +133,15 @@
             <li class="hero__slide hero-slide hero-slide--three swiper-slide">
               <div class="container container--hero">
                 <h3>Магические пейзажи <br>Алтайского Края</h3>
-                <div class="hero-slide__media"></div>
-                <p>Алтайский трекинг-тур&nbsp;&mdash; это захватывающее приключение с&nbsp;посещением магических
+                <p>Алтайский трекинг&#8209;тур&nbsp;- это&nbsp;захватывающее приключение с&nbsp;посещением магических
                   и&nbsp;захватывающих дух ландшафтов Алтайских гор.</p>
                 <a class="hero-slide__btn btn btn--primary" href="#">Смотреть тур</a>
+                <div class="hero-slide__media hero-slide__media--audio">
+                  <iframe frameborder="0" style="border:none;width:340px;height:220px;" width="340" height="220"
+                  src="https://music.yandex.ru/iframe/#track/112912322/25474374">Слушайте <a
+                    href='https://music.yandex.ru/album/25474374/track/112912322'>001. Конец фронтенда, одинаковые
+                    фреймворки и логические свойства</a> на Яндекс Музыке</iframe> -->
+                </div>
                 <div class="hero-slide__info">
                   <div class="hero-slide__info-text hero-slide__info-text--duration">
                     <b>8&nbsp;дней/7&nbsp;ночей</b>
@@ -137,6 +156,7 @@
           <div class="hero__pagination"></div>
         </div>
       </section>
+
     </main>
     <footer>
       <div class="container"></div>
