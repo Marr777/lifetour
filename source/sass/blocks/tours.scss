@@ -1,5 +1,6 @@
 .tours {
   padding-top: 123px;
+  padding-bottom: 50px;
 
   h2 {
     @include title;
@@ -25,8 +26,24 @@
 }
 
 .tours__wrapper {
+  position: relative;
+
   display: grid;
   grid-template-columns: auto auto;
+
+  &::after {
+    position: absolute;
+    z-index: -1;
+    left: -118px;
+    bottom: -44px;
+
+    width: 237px;
+    height: 180px;
+
+    background-image: url("../img/tours/small-clouds.png");
+
+    content: "";
+  }
 }
 
 .tours__swiper-buttons {
