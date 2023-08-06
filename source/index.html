@@ -160,104 +160,353 @@
       </section>
       <section class="tours">
         <div class="container">
-          <h2>Ближайшие туры</h2>
-          <div class="tours__swiper-buttons">
-            <button class="tours__swiper-btn tours__swiper-btn--prev btn btn--primary" type="button"
-              aria-label="Перелистнуть назад.">
-              <svg width="14" height="9" viewBox="0 0 14 9">
-                <use href="img/sprite.svg#slider-arrow" />
+          <div class="tours__wrapper">
+            <h2 data-name="title">Ближайшие туры</h2>
+            <div class="tours__swiper-buttons">
+              <button class="tours__swiper-btn tours__swiper-btn--prev btn btn--slider" type="button"
+                aria-label="Перелистнуть назад.">
+                <svg width="14" height="9" viewBox="0 0 14 9">
+                  <use href="img/sprite.svg#slider-arrow" />
+                </svg>
+              </button>
+              <button class="tours__swiper-btn tours__swiper-btn--next btn btn--slider btn--slider_next" type="button"
+                aria-label="Перелистнуть вперёд.">
+                <svg width="14" height="9" viewBox="0 0 14 9">
+                  <use href="img/sprite.svg#slider-arrow" />
+                </svg>
+              </button>
+            </div>
+            <div class="tours__swiper swiper">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/tours/elbrus-mobile.webp 1x, img/tours/elbrus-mobile@2x.webp 2x" width="290"
+                      height="412">
+                    <source type="image/webp" media="(max-width: 1199px)"
+                      srcset="img/tours/elbrus-tablet.webp 1x, img/tours/elbrus-tablet@2x.webp 2x" width="324"
+                      height="412">
+                    <source type="image/webp" srcset="img/tours/elbrus.webp 1x, img/tours/elbrus@2x.webp 2x" width="380"
+                      height="412">
+                    <source media="(max-width: 767px)"
+                      srcset="img/tours/elbrus-mobile.jpg 1x, img/tours/elbrus-mobile@2x.jpg 2x" width="290"
+                      height="412">
+                    <source media="(max-width: 1199px)"
+                      srcset="img/tours/elbrus-tablet.jpg 1x, img/tours/elbrus-tablet@2x.jpg 2x" width="324"
+                      height="412">
+                    <img src="img/tours/elbrus.jpg" srcset="img/tours/elbrus@2x.jpg" width="380" height="412"
+                      alt="Фотография видов Эльбруса.">
+                  </picture>
+                  <div class="tours__card">
+                    <div class="tours__card-info">
+                      <p>
+                        <span class="tours__card-detail tours__card-detail--geo">Кавказ</span>
+                      </p>
+                      <p>
+                        <span class="tours__card-detail tours__card-detail--days">4&nbsp;дня</span>
+                      </p>
+                      <p>
+                        <span class="tours__card-detail tours__card-detail--nights">3&nbsp;ночи</span>
+                      </p>
+                    </div>
+                    <h3>Путешествие <br>вокруг Эльбруса</h3>
+                    <dl>
+                      <dt>
+                        <div class="tours__card-detail tours__card-detail--difficulty">Сложность:</div>
+                      </dt>
+                      <dd>
+                        <div
+                          class="tours__card-detail tours__card-detail--difficulty tours__card-detail--stars star-rating"
+                          data-name="star-rating" data-stars="3">
+                        </div>
+                      </dd>
+                      <dt>
+                        <div class="tours__card-detail tours__card-detail--dates">Даты&nbsp;набора:</div>
+                      </dt>
+                      <dd>
+                        <div class="tours__card-detail tours__card-detail--dates">12.06-19.06</div>
+                      </dd>
+                      <dt>
+                        <div class="tours__card-detail tours__card-detail--group">Группа:</div>
+                      </dt>
+                      <dd>
+                        <div class="tours__card-detail tours__card-detail--group">до 15 чел.</div>
+                      </dd>
+                    </dl>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/tours/beluha-mobile.webp 1x, img/tours/beluha-mobile@2x.webp 2x" width="290"
+                    height="412">
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="img/tours/beluha-tablet.webp 1x, img/tours/beluha-tablet@2x.webp 2x" width="324"
+                    height="412">
+                  <source type="image/webp" srcset="img/tours/beluha.webp 1x, img/tours/beluha@2x.webp 2x" width="380"
+                    height="412">
+                  <source media="(max-width: 767px)"
+                    srcset="img/tours/beluha-mobile.jpg 1x, img/tours/beluha-mobile@2x.jpg 2x" width="290"
+                    height="412">
+                  <source media="(max-width: 1199px)"
+                    srcset="img/tours/beluha-tablet.jpg 1x, img/tours/beluha-tablet@2x.jpg 2x" width="324"
+                    height="412">
+                    <img src="img/tours/beluha.jpg" srcset="img/tours/beluha@2x.jpg" width="380" height="412"
+                      alt="Фотография подножия Белухи.">
+                  </picture>
+                  <div class="tours__card">
+                    <div class="tours__card-info">
+                      <p>
+                        <span class="tours__card-detail tours__card-detail--geo">Алтай</span>
+                      </p>
+                      <p>
+                        <span class="tours__card-detail tours__card-detail--days">14&nbsp;дней</sp>
+                      </p>
+                      <p>
+                        <span class="tours__card-detail tours__card-detail--nights">13&nbsp;ночей</span>
+                      </p>
+                    </div>
+                    <h3>Путь к подножию <br>Белухи</h3>
+                    <dl>
+                      <dt>
+                        <div class="tours__card-detail tours__card-detail--difficulty">Сложность:</div>
+                      </dt>
+                      <dd>
+                        <div
+                          class="tours__card-detail tours__card-detail--difficulty tours__card-detail--stars star-rating"
+                          data-name="star-rating" data-stars="2"></div>
+                      </dd>
+                      <dt>
+                        <div class="tours__card-detail tours__card-detail--dates">Даты&nbsp;набора:</div>
+                      </dt>
+                      <dd>
+                        <div class="tours__card-detail tours__card-detail--dates">14.06-23.06</div>
+                      </dd>
+                      <dt>
+                        <div class="tours__card-detail tours__card-detail--group">Группа:</div>
+                      </dt>
+                      <dd>
+                        <div class="tours__card-detail tours__card-detail--group">до 25 чел.</div>
+                      </dd>
+                    </dl>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/tours/fisht-mobile.webp 1x, img/tours/fisht-mobile@2x.webp 2x" width="290"
+                    height="412">
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="img/tours/fisht-tablet.webp 1x, img/tours/fisht-tablet@2x.webp 2x" width="324"
+                    height="412">
+                  <source type="image/webp" srcset="img/tours/fisht.webp 1x, img/tours/fisht@2x.webp 2x" width="380"
+                    height="412">
+                  <source media="(max-width: 767px)"
+                    srcset="img/tours/fisht-mobile.jpg 1x, img/tours/fisht-mobile@2x.jpg 2x" width="290"
+                    height="412">
+                  <source media="(max-width: 1199px)"
+                    srcset="img/tours/fisht-tablet.jpg 1x, img/tours/fisht-tablet@2x.jpg 2x" width="324"
+                    height="412">
+                    <img src="img/tours/fisht.jpg" srcset="img/tours/fisht@2x.jpg" width="380" height="412"
+                      alt="Фотография вершины Фишт.">
+                  </picture>
+                  <div class="tours__card">
+                    <div class="tours__card-info">
+                      <p>
+                        <span class="tours__card-detail tours__card-detail--geo">Адыгея</span>
+                      </p>
+                      <p>
+                        <span class="tours__card-detail tours__card-detail--days">7&nbsp;дней</sp>
+                      </p>
+                      <p>
+                        <span class="tours__card-detail tours__card-detail--nights">6&nbsp;ночей</span>
+                      </p>
+                    </div>
+                    <h3>Через Фишт <br>к Черному морю</h3>
+                    <dl>
+                      <dt>
+                        <div class="tours__card-detail tours__card-detail--difficulty">Сложность:</div>
+                      </dt>
+                      <dd>
+                        <div
+                          class="tours__card-detail tours__card-detail--difficulty tours__card-detail--stars star-rating"
+                          data-name="star-rating" data-stars="3"></div>
+                      </dd>
+                      <dt>
+                        <div class="tours__card-detail tours__card-detail--dates">Даты&nbsp;набора:</div>
+                      </dt>
+                      <dd>
+                        <div class="tours__card-detail tours__card-detail--dates">15.07-19.07</div>
+                      </dd>
+                      <dt>
+                        <div class="tours__card-detail tours__card-detail--group">Группа:</div>
+                      </dt>
+                      <dd>
+                        <div class="tours__card-detail tours__card-detail--group">до 22 чел.</div>
+                      </dd>
+                    </dl>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <picture>
+                    <!-- <source type="image/webp" media="(max-width: 1199px)"
+                      srcset="img/hero/photo-cards-tablet.webp 1x, img/hero/photo-cards-tablet@2x.webp 2x" width="442"
+                      height="365"> -->
+                    <source type="image/webp" srcset="img/tours/elbrus.webp 1x, img/tours/elbrus@2x.webp 2x" width="380"
+                      height="412">
+                    <!-- <source media="(max-width: 1199px)"
+                      srcset="img/hero/photo-cards-tablet.png 1x, img/hero/photo-cards-tablet@2x.png 2x" width="442"
+                      height="365"> -->
+                    <img src="img/tours/elbrus.jpg" srcset="img/tours/elbrus@2x.jpg" width="380" height="412"
+                      alt="Фотография видов Эльбруса.">
+                  </picture>
+                  <div class="tours__card">
+                    <div class="tours__card-info">
+                      <p>
+                        <span class="tours__card-detail tours__card-detail--geo">Кавказ</span>
+                      </p>
+                      <p>
+                        <span class="tours__card-detail tours__card-detail--days">4&nbsp;дня</span>
+                      </p>
+                      <p>
+                        <span class="tours__card-detail tours__card-detail--nights">3&nbsp;ночи</span>
+                      </p>
+                    </div>
+                    <h3>Путешествие <br>вокруг Эльбруса</h3>
+                    <dl>
+                      <dt>
+                        <div class="tours__card-detail tours__card-detail--difficulty">Сложность:</div>
+                      </dt>
+                      <dd>
+                        <div
+                          class="tours__card-detail tours__card-detail--difficulty tours__card-detail--stars star-rating"
+                          data-name="star-rating" data-stars="3">
+                        </div>
+                      </dd>
+                      <dt>
+                        <div class="tours__card-detail tours__card-detail--dates">Даты&nbsp;набора:</div>
+                      </dt>
+                      <dd>
+                        <div class="tours__card-detail tours__card-detail--dates">12.06-19.06</div>
+                      </dd>
+                      <dt>
+                        <div class="tours__card-detail tours__card-detail--group">Группа:</div>
+                      </dt>
+                      <dd>
+                        <div class="tours__card-detail tours__card-detail--group">до 15 чел.</div>
+                      </dd>
+                    </dl>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <picture>
+                    <!-- <source type="image/webp" media="(max-width: 1199px)"
+                      srcset="img/hero/photo-cards-tablet.webp 1x, img/hero/photo-cards-tablet@2x.webp 2x" width="442"
+                      height="365"> -->
+                    <source type="image/webp" srcset="img/tours/beluha.webp 1x, img/tours/beluha@2x.webp 2x" width="380"
+                      height="412">
+                    <!-- <source media="(max-width: 1199px)"
+                      srcset="img/hero/photo-cards-tablet.png 1x, img/hero/photo-cards-tablet@2x.png 2x" width="442"
+                      height="365"> -->
+                    <img src="img/tours/beluha.jpg" srcset="img/tours/beluha@2x.jpg" width="380" height="412"
+                      alt="Фотография подножия Белухи.">
+                  </picture>
+                  <div class="tours__card">
+                    <div class="tours__card-info">
+                      <p>
+                        <span class="tours__card-detail tours__card-detail--geo">Алтай</span>
+                      </p>
+                      <p>
+                        <span class="tours__card-detail tours__card-detail--days">14&nbsp;дней</sp>
+                      </p>
+                      <p>
+                        <span class="tours__card-detail tours__card-detail--nights">13&nbsp;ночей</span>
+                      </p>
+                    </div>
+                    <h3>Путь к подножию <br>Белухи</h3>
+                    <dl>
+                      <dt>
+                        <div class="tours__card-detail tours__card-detail--difficulty">Сложность:</div>
+                      </dt>
+                      <dd>
+                        <div
+                          class="tours__card-detail tours__card-detail--difficulty tours__card-detail--stars star-rating"
+                          data-name="star-rating" data-stars="2"></div>
+                      </dd>
+                      <dt>
+                        <div class="tours__card-detail tours__card-detail--dates">Даты&nbsp;набора:</div>
+                      </dt>
+                      <dd>
+                        <div class="tours__card-detail tours__card-detail--dates">14.06-23.06</div>
+                      </dd>
+                      <dt>
+                        <div class="tours__card-detail tours__card-detail--group">Группа:</div>
+                      </dt>
+                      <dd>
+                        <div class="tours__card-detail tours__card-detail--group">до 25 чел.</div>
+                      </dd>
+                    </dl>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <picture>
+                    <!-- <source type="image/webp" media="(max-width: 1199px)"
+                      srcset="img/hero/photo-cards-tablet.webp 1x, img/hero/photo-cards-tablet@2x.webp 2x" width="442"
+                      height="365"> -->
+                    <source type="image/webp" srcset="img/tours/fisht.webp 1x, img/tours/fisht@2x.webp 2x" width="380"
+                      height="412">
+                    <!-- <source media="(max-width: 1199px)"
+                      srcset="img/hero/photo-cards-tablet.png 1x, img/hero/photo-cards-tablet@2x.png 2x" width="442"
+                      height="365"> -->
+                    <img src="img/tours/fisht.jpg" srcset="img/tours/fisht@2x.jpg" width="380" height="412"
+                      alt="Фотография вершины Фишт.">
+                  </picture>
+                  <div class="tours__card">
+                    <div class="tours__card-info">
+                      <p>
+                        <span class="tours__card-detail tours__card-detail--geo">Адыгея</span>
+                      </p>
+                      <p>
+                        <span class="tours__card-detail tours__card-detail--days">7&nbsp;дней</sp>
+                      </p>
+                      <p>
+                        <span class="tours__card-detail tours__card-detail--nights">6&nbsp;ночей</span>
+                      </p>
+                    </div>
+                    <h3>Через Фишт <br>к Черному морю</h3>
+                    <dl>
+                      <dt>
+                        <div class="tours__card-detail tours__card-detail--difficulty">Сложность:</div>
+                      </dt>
+                      <dd>
+                        <div
+                          class="tours__card-detail tours__card-detail--difficulty tours__card-detail--stars star-rating"
+                          data-name="star-rating" data-stars="3"></div>
+                      </dd>
+                      <dt>
+                        <div class="tours__card-detail tours__card-detail--dates">Даты&nbsp;набора:</div>
+                      </dt>
+                      <dd>
+                        <div class="tours__card-detail tours__card-detail--dates">15.07-19.07</div>
+                      </dd>
+                      <dt>
+                        <div class="tours__card-detail tours__card-detail--group">Группа:</div>
+                      </dt>
+                      <dd>
+                        <div class="tours__card-detail tours__card-detail--group">до 22 чел.</div>
+                      </dd>
+                    </dl>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <a class="tours__link" href="#">
+              <span>Показать все туры</span>
+              <svg width="9" height="14" viewBox="0 0 9 14">
+                <use href="img/sprite.svg#more-arrow" />
               </svg>
-            </button>
-            <button class="tours__swiper-btn tours__swiper-btn--prev btn btn--primary" type="button"
-              aria-label="Перелистнуть вперёд.">
-              <svg width="14" height="9" viewBox="0 0 14 9">
-                <use href="img/sprite.svg#slider-arrow" />
-              </svg>
-            </button>
+            </a>
           </div>
-          <div class="tours__swiper swiper">
-            <ul class="swiper-wrapper">
-              <li class="swiper-slide">
-                <div class="tours__card">
-                  <div class="tours__card-info">
-                    <p>
-                      <span class="tours__card-detail tours__card-detail--geo">Кавказ</span>
-                    </p>
-                    <p>
-                      <span class="tours__card-detail tours__card-detail--days">4 дня</span>
-                    </p>
-                    <p>
-                      <span class="tours__card-detail tours__card-detail--nights">3 ночи</span>
-                    </p>
-                  </div>
-                  <h3>Путешествие вокруг Эльбруса</h3>
-                  <dl>
-                    <dt>Сложность:</dt>
-                    <dd>
-                      <div class="tours__card-detail tours__card-detail--difficulty" aria-label="3 звезды."></div>
-                    </dd>
-                    <dt>Даты набора:</dt>
-                    <dd>12.06-19.06</dd>
-                    <dt>Группа:</dt>
-                    <dd>до 15 чел.</dd>
-                  </dl>
-                </div>
-              </li>
-              <li class="swiper-slide">
-                <div class="tours__card">
-                  <div class="tours__card-info">
-                    <p>
-                      <span class="tours__card-detail tours__card-detail--geo">Алтай</span>
-                    </p>
-                    <p>
-                      <span class="tours__card-detail tours__card-detail--days">14 дней</sp>
-                    </p>
-                    <p>
-                      <span class="tours__card-detail tours__card-detail--nights">13 ночей</span>
-                    </p>
-                  </div>
-                  <h3>Путь к подножию Белухи</h3>
-                  <dl>
-                    <dt>Сложность:</dt>
-                    <dd>
-                      <div class="tours__card-detail tours__card-detail--difficulty" aria-label="2 звезды."></div>
-                    </dd>
-                    <dt>Даты набора:</dt>
-                    <dd>14.06-23.06</dd>
-                    <dt>Группа:</dt>
-                    <dd>до 25 чел.</dd>
-                  </dl>
-                </div>
-              </li>
-              <li class="swiper-slide">
-                <div class="tours__card">
-                  <div class="tours__card-info">
-                    <p>
-                      <span class="tours__card-detail tours__card-detail--geo">Адыгея</span>
-                    </p>
-                    <p>
-                      <span class="tours__card-detail tours__card-detail--days">7 дней</sp>
-                    </p>
-                    <p>
-                      <span class="tours__card-detail tours__card-detail--nights">6 ночей</span>
-                    </p>
-                  </div>
-                  <h3>Через Фишт к Черному морю</h3>
-                  <dl>
-                    <dt>Сложность:</dt>
-                    <dd>
-                      <div class="tours__card-detail tours__card-detail--difficulty" aria-label="3 звезды."></div>
-                    </dd>
-                    <dt>Даты набора:</dt>
-                    <dd>15.07-19.07</dd>
-                    <dt>Группа:</dt>
-                    <dd>до 22 чел.</dd>
-                  </dl>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <a class="tours__link" href="#">Показать все туры</a>
         </div>
       </section>
 
@@ -266,6 +515,26 @@
       <div class="container"></div>
     </footer>
   </div>
+
+  <template id="star-rating">
+
+      <svg width="15" height="14" viewBox="0 0 15 14" aria-hidden="true" focusable="false">
+        <use href="img/sprite.svg#tours-star" />
+      </svg>
+      <svg width="15" height="14" viewBox="0 0 15 14" aria-hidden="true" focusable="false">
+        <use href="img/sprite.svg#tours-star" />
+      </svg>
+      <svg width="15" height="14" viewBox="0 0 15 14" aria-hidden="true" focusable="false">
+        <use href="img/sprite.svg#tours-star" />
+      </svg>
+      <svg width="15" height="14" viewBox="0 0 15 14" aria-hidden="true" focusable="false">
+        <use href="img/sprite.svg#tours-star" />
+      </svg>
+      <svg width="15" height="14" viewBox="0 0 15 14" aria-hidden="true" focusable="false">
+        <use href="img/sprite.svg#tours-star" />
+      </svg>
+
+  </template>
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>

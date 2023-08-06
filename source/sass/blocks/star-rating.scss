@@ -1,0 +1,33 @@
+.star-rating {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+
+  svg {
+    fill: $color-transparent;
+
+    @include vp-767 {
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  &--two {
+    svg:first-child,
+    svg:nth-child(2) {
+      fill: $color-default-white;
+    }
+  }
+
+  &--three {
+    svg:first-child,
+    svg:nth-child(2),
+    svg:nth-child(3) {
+      fill: $color-default-white;
+    }
+  }
+
+  @include vp-767 {
+    gap: 3px;
+  }
+}

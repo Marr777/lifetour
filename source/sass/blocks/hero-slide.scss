@@ -183,13 +183,13 @@
 
   &--duration {
     &::before {
-      background-image: url(../img/svg/hero-moon.svg);
+      background-image: url("../img/svg/hero-moon.svg");
     }
   }
 
   &--level {
     &::before {
-      background-image: url(../img/svg/hero-level.svg);
+      background-image: url("../img/svg/hero-level.svg");
     }
   }
 }

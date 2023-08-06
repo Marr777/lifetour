@@ -1,5 +1,7 @@
 @mixin retina {
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
     @content;
   }
 }
@@ -56,6 +58,54 @@
   }
 }
 
+@mixin title {
+  position: relative;
+  z-index: 2;
+
+  margin: 0;
+
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 35px;
+  -webkit-text-stroke: 1px;
+
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 55px;
+    -webkit-text-stroke: 1px;
+    color: $color-primary;
+
+    opacity: 0.03;
+
+    content: attr(data-content);
+  }
+
+  @include vp-1199 {
+    font-size: 25px;
+    line-height: 36px;
+    letter-spacing: 0.01em;
+
+    &::after {
+      font-size: 39px;
+      line-height: 39px;
+    }
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+
+    &::after {
+      font-size: 26px;
+      line-height: 26px;
+    }
+  }
+}
 
 // ---------------------------------
 

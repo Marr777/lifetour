@@ -38,6 +38,18 @@
     transition: background-color $trans-default;
   }
 
+  &--slider {
+    padding: 9px 12px;
+
+    background-color: $color-secondary;
+
+    &_next {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
   &:disabled {
     opacity: 0.5;
 
