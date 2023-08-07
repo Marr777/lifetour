@@ -1,5 +1,8 @@
 .training {
   padding-top: 64px;
+  padding-bottom: 40px;
+
+  overflow: hidden;
 
   h2 {
     @include title;
@@ -21,10 +24,11 @@
 
 .training__swiper {
   padding-top: 33px;
+  padding-bottom: 44px;
 }
 
 .training__card {
-  padding: 20px 20px 36px;
+  padding: 20px;
   width: fit-content;
   max-width: 278px;
   display: grid;
@@ -65,4 +69,66 @@
   align-self: center;
 
   border: 1px solid rgba(2, 102, 193, 0.1);
+}
+
+.training__process {
+  h3 {
+    @include title-secondary;
+
+    margin-bottom: 32px;
+  }
+
+  ul {
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 33px;
+
+    list-style: none;
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: -100%;
+      z-index: -1;
+
+      width: 200vw;
+      height: 1px;
+      margin-bottom: 7px;
+      margin-left: -120px;
+      margin-right: -120px;
+
+      background-color: $color-secondary;
+      opacity: 0.2;
+
+      content: "";
+    }
+  }
+
+  li {
+    position: relative;
+
+    width: fit-content;
+    display: grid;
+    align-items: center;
+    grid-template-columns: min-content auto;
+    column-gap: 15px;
+    padding-bottom: 43px;
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+
+      width: 14px;
+      height: 14px;
+
+      background-color: $color-secondary;
+      border-radius: 50%;
+
+      content: "";
+    }
+  }
 }
