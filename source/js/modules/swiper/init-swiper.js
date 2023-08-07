@@ -48,6 +48,39 @@ export const initSwiper = () => {
     },
   });
 
+  const trainingSwiper = new Swiper('.training__swiper', {
+    keyboard: true,
+
+    wrapperClass: 'swiper-wrapper',
+    slideClass: 'swiper-slide',
+
+    breakpoints: {
+      1280: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
+
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 18,
+      },
+      320: {
+        slidesPerView: 1,
+      },
+    },
+
+    navigation: {
+      nextEl: '.training__swiper-btn--next',
+      prevEl: '.training__swiper-btn--prev',
+    },
+  });
+
   heroSwiper.enable();
   toursSwiper.enable();
+  trainingSwiper.enable();
 };

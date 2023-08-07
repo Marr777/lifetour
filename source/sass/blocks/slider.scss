@@ -1,0 +1,23 @@
+.slider {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.slider__btns {
+  display: flex;
+  justify-self: end;
+  align-self: start;
+  column-gap: 2px;
+}
+
+.slider__swiper {
+  width: 100%;
+  grid-column: 1/-1;
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+}
