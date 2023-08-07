@@ -1,5 +1,11 @@
 .feedback {
+  @include vp-1199 {
+    padding-top: 50px;
+  }
 
+  @include vp-767 {
+    padding-top: 35px;
+  }
 }
 
 .feedback__wrapper {
@@ -7,5 +13,127 @@
     @include title;
 
     line-height: 59px;
+
+    @include vp-1199 {
+      line-height: 58px;
+    }
+
+    @include vp-767 {
+      line-height: 46px;
+    }
+  }
+}
+
+.feedback__swiper {
+  padding-top: 17px;
+  padding-bottom: 40px; //временно
+  padding-left: 121px;
+
+  li {
+    width: unset;
+  }
+
+  @include vp-1199 {
+    padding-top: 10px;
+    padding-left: 45px;
+  }
+
+  @include vp-767 {
+    padding: 19px 15px 40px;
+  }
+}
+
+.feedback__card {
+  width: 790px;
+  padding: 20px 40px 20px 20px;
+  display: grid;
+  grid-template-columns: max-content auto;
+  column-gap: 30px;
+
+  box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.10);
+
+  @include vp-1199 {
+    width: 560px;
+    padding: 20px 30px 20px 20px;
+  }
+
+  @include vp-767 {
+    width: 290px;
+    min-height: 466px;
+    padding: 20px;
+    grid-template-columns: auto;
+    grid-template-rows: max-content auto;
+  }
+}
+
+.feedback__card-info {
+  margin-top: 15px;
+
+  blockquote {
+    margin: 0;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+  }
+
+  p {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 22px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 10px;
+    }
+
+    @include vp-1199 {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+
+  @include vp-1199 {
+    margin-top: 3px;
+  }
+
+  @include vp-767 {
+    margin-top: 21px;
+  }
+}
+
+.feedback__card-author {
+  margin-top: auto;
+  margin-bottom: 16px;
+
+  cite {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+
+    font-style: normal;
+  }
+
+  b {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 13px;
+
+    @include vp-1199 {
+      font-size: 12px;
+    }
+  }
+
+  span {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 12px;
+  }
+
+  @include vp-1199 {
+    margin-bottom: 2px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 0;
   }
 }

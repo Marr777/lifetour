@@ -76,7 +76,30 @@ export const initSwiper = () => {
     },
   });
 
+  const feedbackSwiper = new Swiper('.feedback__swiper', {
+    keyboard: true,
+
+    wrapperClass: 'swiper-wrapper',
+    slideClass: 'swiper-slide',
+
+    spaceBetween: 30,
+    slidesPerView: 'auto',
+
+    // breakpoints: {
+    //   1280: {
+    //     slidesPerView: 2,
+    //     spaceBetween: 30,
+    //   },
+    // },
+
+    navigation: {
+      nextEl: '.feedback__swiper-btn--next',
+      prevEl: '.feedback__swiper-btn--prev',
+    },
+  });
+
   heroSwiper.enable();
   toursSwiper.enable();
   trainingSwiper.enable();
+  feedbackSwiper.enable();
 };

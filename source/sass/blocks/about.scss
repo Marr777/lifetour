@@ -11,6 +11,7 @@
 
     background-image: url("../img/about/bg-tablet.png");
     background-size: 62%;
+    background-position: left 50%;
   }
 
   @include vp-767 {
@@ -75,7 +76,7 @@
   }
 
   @include vp-767 {
-    padding-top: 445px;
+    padding-top: 154%;
     width: 100%;
   }
 }
