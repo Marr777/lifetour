@@ -1,0 +1,11 @@
+.feedback {
+
+}
+
+.feedback__wrapper {
+  h2 {
+    @include title;
+
+    line-height: 59px;
+  }
+}
