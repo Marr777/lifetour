@@ -30,15 +30,14 @@ const setAdvantagesSlider = () => {
 const breakpointSlider = () => {
   if (tabletBreakpoint.matches && advantagesSwiper) {
     advantagesSwiper.destroy();
+    advantagesSwiper = '';
   } else if (!advantagesSwiper.initialized) {
     initAdvantagesSlider();
   }
 };
 
 export const initAdvantagesSlider = () => {
-  if (!tabletBreakpoint.matches) {
-    setAdvantagesSlider();
-  }
+  setAdvantagesSlider();
   breakpointSlider();
   window.addEventListener('resize', breakpointSlider);
 };
