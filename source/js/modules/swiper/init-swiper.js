@@ -85,13 +85,6 @@ export const initSwiper = () => {
     spaceBetween: 30,
     slidesPerView: 'auto',
 
-    // breakpoints: {
-    //   1280: {
-    //     slidesPerView: 2,
-    //     spaceBetween: 30,
-    //   },
-    // },
-
     navigation: {
       nextEl: '.feedback__swiper-btn--next',
       prevEl: '.feedback__swiper-btn--prev',
@@ -102,4 +95,6 @@ export const initSwiper = () => {
   toursSwiper.enable();
   trainingSwiper.enable();
   feedbackSwiper.enable();
+
 };
+

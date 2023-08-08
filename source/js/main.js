@@ -6,7 +6,7 @@ import {initSwiper} from './modules/swiper/init-swiper';
 import {initVideo} from './modules/init-video.js/init-video';
 import {initMobileMenu} from './modules/mobile-menu/mobile-menu';
 import {setStars} from './modules/star-rating/star-rating';
-
+import {initAdvantagesSlider} from './modules/swiper/init-advantages-slider';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -28,6 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initSwiper();
     initMobileMenu();
     initVideo();
+    initAdvantagesSlider();
 
     const form = new Form();
     window.form = form;
