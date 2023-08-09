@@ -1,5 +1,6 @@
 .advantages {
   padding-top: 96px;
+  padding-bottom: 35px;
 
   h2 {
     @include title;
@@ -24,6 +25,7 @@
 
   @include vp-1199 {
     padding-top: 43px;
+    padding-bottom: 13px;
   }
 
   @include vp-767 {

@@ -91,10 +91,33 @@ export const initSwiper = () => {
     },
   });
 
+  const gallerySwiper = new Swiper('.gallery__swiper', {
+    keyboard: true,
+
+    wrapperClass: 'swiper-wrapper',
+    slideClass: 'swiper-slide',
+
+    breakpoints: {
+      768: {
+        spaceBetween: 6,
+      },
+      320: {
+        spaceBetween: 3,
+      },
+    },
+
+    slidesPerView: 'auto',
+
+    navigation: {
+      nextEl: '.gallery__swiper-btn--next',
+      prevEl: '.gallery__swiper-btn--prev',
+    },
+  });
+
   heroSwiper.enable();
   toursSwiper.enable();
   trainingSwiper.enable();
   feedbackSwiper.enable();
-
+  gallerySwiper.enable();
 };
 
