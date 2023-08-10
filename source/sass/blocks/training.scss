@@ -129,8 +129,48 @@
 
   border: 1px solid rgba(2, 102, 193, 0.1);
 
+  transition: border $trans-default, background-color $trans-default;
+
+  svg {
+    fill: $color-primary;
+
+    transition: fill $trans-default;
+  }
+
   @include vp-767 {
     margin-right: 12px;
+  }
+
+  @include hover-focus {
+    border-color: $color-primary;
+
+    &:active {
+      background-color: $color-secondary;
+      border: none;
+
+      svg {
+        fill: $color-default-white;
+      }
+    }
+  }
+
+  &:active {
+    background-color: $color-secondary;
+    border: none;
+
+    svg {
+      fill: $color-default-white;
+    }
+  }
+
+  &:focus,
+  &:focus-visible {
+    border-color: $color-primary;
+  }
+
+  &:disabled {
+    border-color: $color-primary;
+    opacity: 0.3;
   }
 }
 
@@ -166,7 +206,6 @@
       position: absolute;
       bottom: 0;
       left: -100%;
-      z-index: -1;
 
       width: 200vw;
       height: 1px;

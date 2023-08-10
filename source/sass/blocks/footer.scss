@@ -124,10 +124,43 @@
 
   outline: 1px solid rgba(45, 56, 63, 0.3);
 
+  transition: outline $trans-default, background-color $trans-default;
+
   svg {
     fill: $color-primary;
 
     transition: fill $trans-default;
+  }
+
+  &:focus-visible {
+    outline-color: $color-primary;
+  }
+
+  @include hover-focus {
+    outline-color: $color-primary;
+
+    &:active {
+      background-color: $color-secondary;
+      outline: none;
+
+      svg {
+        fill: $color-default-white;
+      }
+    }
+  }
+
+  &:active {
+    background-color: $color-secondary;
+    outline: none;
+
+    svg {
+      fill: $color-default-white;
+    }
+  }
+
+  &:disabled {
+    outline-color: $color-primary;
+    opacity: 0.3;
   }
 }
 

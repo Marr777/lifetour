@@ -343,11 +343,59 @@
   letter-spacing: 0.64px;
   text-transform: uppercase;
 
+  svg {
+    fill: $color-transparent;
+    stroke: $color-primary;
+
+    transition: stroke $trans-default;
+  }
+
   @include vp-767 {
     margin-top: 30px;
 
     font-size: 14px;
     line-height: 14px;
     letter-spacing: 0.56px;
+  }
+
+  @include hover {
+    color: $color-active;
+
+    svg {
+      stroke: $color-active;
+    }
+
+    &:active {
+      color: $color-secondary;
+
+      svg {
+        stroke: $color-secondary;
+      }
+    }
+  }
+
+  &:active {
+    color: $color-secondary;
+
+    svg {
+      stroke: $color-secondary;
+    }
+  }
+
+  &:focus,
+  &:focus-visible {
+    color: $color-active;
+
+    svg {
+      stroke: $color-active;
+    }
+  }
+
+  &:disabled {
+    color: rgba(2, 102, 193, 0.1);
+
+    svg {
+      stroke: rgba(2, 102, 193, 0.1);
+    }
   }
 }

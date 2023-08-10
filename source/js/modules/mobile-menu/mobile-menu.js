@@ -29,7 +29,7 @@ const onBurgerBtnClick = () => {
 };
 
 const onOverlayClick = (evt) => {
-  if (evt.target === header && evt.target.closest !== 'header__inner') {
+  if (!evt.target.closest('.header__inner') || evt.target.matches('.header__nav-link')) {
     closeMenu();
   }
 };

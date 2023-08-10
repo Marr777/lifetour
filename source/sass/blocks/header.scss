@@ -17,14 +17,21 @@
 
   @include vp-1199 {
     padding-top: 30px;
+
+    &--open {
+      padding: 0;
+    }
   }
 
   @include vp-767 {
     padding-top: 15px;
+
+    &--open {
+      padding: 0;
+    }
   }
 
   &--open {
-    padding: 0;
     height: 100%;
     background-color: $burger-overlay;
 
@@ -192,6 +199,35 @@
 
       content: "";
     }
+
+    &--open {
+      position: relative;
+
+      &::after,
+      &::before {
+        position: absolute;
+        top: 9px;
+        left: 0;
+        right: 0;
+
+        width: 22px;
+        height: 2px;
+
+        background-color: $color-primary;
+      }
+
+      &::after {
+        transform: rotate(45deg);
+      }
+
+      &::before {
+        transform: rotate(-45deg);
+      }
+
+      .header__burger-line {
+        display: none;
+      }
+    }
   }
 
   @include hover {
@@ -202,35 +238,6 @@
 
   @include vp-767 {
     transform: translateY(-7px);
-  }
-
-  &--open {
-    position: relative;
-
-    &::after,
-    &::before {
-      position: absolute;
-      top: 9px;
-      left: 0;
-      right: 0;
-
-      width: 22px;
-      height: 2px;
-
-      background-color: $color-primary;
-    }
-
-    &::after {
-      transform: rotate(45deg);
-    }
-
-    &::before {
-      transform: rotate(-45deg);
-    }
-
-    .header__burger-line {
-      display: none;
-    }
   }
 }
 

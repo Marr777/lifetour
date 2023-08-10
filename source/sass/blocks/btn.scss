@@ -17,8 +17,37 @@
 
     background-color: $color-secondary;
 
+    transition: background-color $trans-default, color $trans-default, box-shadow $trans-default;
+
     @include vp-767 {
       padding: 18px 0;
+    }
+
+    @include hover-focus {
+      color: $color-active;
+      background-color: $color-default-white;
+      box-shadow: 0 0 0 1px $color-active inset;
+
+      &:active {
+        color: $color-default-white;
+
+        background-color: $color-active;
+      }
+    }
+
+    &:active {
+      color: $color-default-white;
+
+      background-color: $color-active;
+    }
+
+    &:focus,
+    &:focus-visible {
+      color: $color-active;
+
+      background-color: $color-default-white;
+      box-shadow: 0 0 0 1px $color-active inset;
+      outline: none;
     }
   }
 
@@ -43,15 +72,59 @@
 
     background-color: $color-secondary;
 
+    transition: background-color $trans-default, color $trans-default, box-shadow $trans-default;
+
     &_next {
       svg {
         transform: rotate(180deg);
       }
     }
+
+    svg {
+      fill: $color-default-white;
+
+      transition: fill $trans-default;
+    }
+
+    @include hover-focus {
+      background-color: $color-default-white;
+      box-shadow: 0 0 0 1px $color-active inset;
+
+      svg {
+        fill: $color-active;
+      }
+
+      &:active {
+        svg {
+          fill: $color-default-white;
+        }
+
+        background-color: $color-active;
+      }
+    }
+
+    &:active {
+      svg {
+        fill: $color-default-white;
+      }
+
+      background-color: $color-active;
+    }
+
+    &:focus,
+    &:focus-visible {
+      svg {
+        fill: $color-active;
+      }
+
+      background-color: $color-default-white;
+      box-shadow: 0 0 0 1px $color-active inset;
+      outline: none;
+    }
   }
 
   &:disabled {
-    opacity: 0.5;
+    opacity: 0.2;
 
     pointer-events: none;
   }
