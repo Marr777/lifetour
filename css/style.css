@@ -3581,6 +3581,7 @@ button,
 
 .advantages__card {
   width: 380px;
+  min-height: 331px;
   padding: 40px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4786,6 +4787,7 @@ button,
     padding: 30px 20px;
     width: 324px;
     height: 100%;
+    min-height: unset;
     row-gap: 15px;
   }
 
