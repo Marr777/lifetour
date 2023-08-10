@@ -64,7 +64,41 @@
     border: 1px solid $color-default-white;
     background-color: rgb(255, 255, 255, 0.2);
 
-    transition: background-color $trans-default;
+    transition: background-color $trans-default, border $trans-default;
+
+    svg {
+      fill: $color-default-white;
+      stroke: $color-transparent;
+      stroke-width: 1px;
+
+      transition: stroke $trans-default;
+    }
+
+    @include hover-focus {
+      border-color: $color-active;
+      background-color: $color-transparent;
+
+      svg {
+        stroke: $color-default-black;
+      }
+
+      &:active {
+        background-color: $color-active;
+      }
+    }
+
+    &:active {
+      background-color: $color-active;
+    }
+
+    &:disabled {
+      background-color: $color-active;
+      opacity: 0.1;
+
+      svg {
+        fill: $color-active
+      }
+    }
   }
 
   &--slider {

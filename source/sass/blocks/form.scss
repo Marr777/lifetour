@@ -120,8 +120,12 @@
     border: none;
     outline: none;
 
+    transition: box-shadow $trans-default;
+
     &::placeholder {
       opacity: 0.5;
+
+      transition: color $trans-default;
     }
 
     @include vp-1199 {
@@ -130,6 +134,42 @@
 
     @include vp-767 {
       padding: 16px 15px;
+    }
+
+    @include hover-focus {
+      &::placeholder {
+        color: $color-secondary;
+      }
+
+      box-shadow: 0 0 0 1px $color-secondary inset;
+
+      &:active {
+        box-shadow: 0 0 0 1px $color-active inset;
+
+        &::placeholder {
+          opacity: 0;
+        }
+      }
+    }
+
+    &:active,
+    &:focus,
+    &:focus-visible {
+      box-shadow: 0 0 0 1px $color-active inset;
+
+      &::placeholder {
+        opacity: 0;
+      }
+    }
+
+    &:disabled {
+      box-shadow: 0 0 0 1px rgba(2, 102, 193, 0.1) inset;
+    }
+  }
+
+  &.is-invalid {
+    input {
+      box-shadow: 0 0 0 1px #ff121f inset;
     }
   }
 }

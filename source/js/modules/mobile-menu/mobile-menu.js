@@ -2,6 +2,7 @@ const header = document.querySelector('[data-name="header"]');
 const burgerBtn = header.querySelector('[data-name="burger-btn"]');
 const logo = header.querySelector('[data-name="header-logo"]');
 const nav = header.querySelector('[data-name="header-nav"]');
+const navLinks = header.querySelectorAll('[data-name="header-link"]');
 const body = document.body;
 
 const openMenu = () => {
@@ -9,6 +10,7 @@ const openMenu = () => {
   burgerBtn.classList.add('header__burger-btn--open');
   logo.classList.add('header__logo-link--open');
   nav.classList.add('header__nav--open');
+  navLinks.forEach((link) => link.classList.add('header__nav-link--open'));
   body.classList.add('scroll-lock');
 };
 
@@ -17,6 +19,7 @@ const closeMenu = () => {
   burgerBtn.classList.remove('header__burger-btn--open');
   logo.classList.remove('header__logo-link--open');
   nav.classList.remove('header__nav--open');
+  navLinks.forEach((link) => link.classList.remove('header__nav-link--open'));
   body.classList.remove('scroll-lock');
 };
 
