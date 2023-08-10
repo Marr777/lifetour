@@ -24,4 +24,3 @@ export const setMap = () => {
 
   L.marker(COORDINATES, {icon: mapPin}).addTo(map);
 };
-

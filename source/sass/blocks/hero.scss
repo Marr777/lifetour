@@ -67,7 +67,7 @@
     height: 8px;
   }
 
-  &:not(&--active ) {
+  &:not(.hero__pagination-bullet--active) {
     @include hover {
       background-color: $color-default-white;
       opacity: 0.5;

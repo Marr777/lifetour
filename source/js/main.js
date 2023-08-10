@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initTitles} from './modules/title-shadow/title-shadow';
 import {initSwiper} from './modules/swiper/init-swiper';
+import {initAudio} from './modules/init-audio/init-audio';
 import {initVideo} from './modules/init-video.js/init-video';
 import {initMobileMenu} from './modules/mobile-menu/mobile-menu';
 import {setStars} from './modules/star-rating/star-rating';
@@ -27,9 +28,10 @@ window.addEventListener('DOMContentLoaded', () => {
     initModals();
     initTitles();
     setStars();
-    initSwiper();
     initMobileMenu();
+    initSwiper();
     initVideo();
+    initAudio();
     initAdvantagesSlider();
     setMap();
 
