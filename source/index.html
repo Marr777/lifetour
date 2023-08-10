@@ -1083,8 +1083,8 @@
                   srcset="img/gallery/photo6-mobile.webp 1x, img/gallery/photo6-mobile@2x.webp 2x" width="172"
                   height="153">
                 <source type="image/webp"
-                  srcset="img/gallery/photo6-desktop.webp 1x, img/gallery/photo6-desktop@2x.webp 2x"width="298"
-                  height="265" >
+                  srcset="img/gallery/photo6-desktop.webp 1x, img/gallery/photo6-desktop@2x.webp 2x" width="298"
+                  height="265">
                 <source media="(max-width: 767px)"
                   srcset="img/gallery/photo6-mobile.jpg 1x, img/gallery/photo6-mobile@2x.jpg 2x" width="172"
                   height="153">
@@ -1098,8 +1098,8 @@
                   srcset="img/gallery/photo7-mobile.webp 1x, img/gallery/photo7-mobile@2x.webp 2x" width="159"
                   height="259">
                 <source type="image/webp"
-                  srcset="img/gallery/photo7-desktop.webp 1x, img/gallery/photo7-desktop@2x.webp 2x"width="276"
-                  height="449" >
+                  srcset="img/gallery/photo7-desktop.webp 1x, img/gallery/photo7-desktop@2x.webp 2x" width="276"
+                  height="449">
                 <source media="(max-width: 767px)"
                   srcset="img/gallery/photo7-mobile.jpg 1x, img/gallery/photo7-mobile@2x.jpg 2x" width="159"
                   height="259">
@@ -1108,6 +1108,58 @@
               </picture>
             </li>
           </ul>
+        </div>
+      </section>
+
+      <section class="form">
+        <div class="container">
+          <h2>Остались вопросы?</h2>
+          <p>Заполните форму и&nbsp;наш оператор свяжется с&nbsp;вами для консультации.</p>
+          <div class="form__wrapper" data-form-validate data-callback="base">
+            <form action="https://echo.htmlacademy.ru/" method="post">
+              <div class="form__input-wrapper" data-required data-validate-type="text"
+                data-limitation="letters-and-digit">
+                <input type="text" name="name" aria-label="Имя." placeholder="Как к вам обращаться?" required>
+              </div>
+              <div class="form__input-wrapper" data-required data-validate-type="phone">
+                <input type="tel" name="phone" aria-label="Телефон." placeholder="Телефон" required>
+              </div>
+              <button class="form__btn btn btn--primary" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="container">
+          <div class="contacts__wrapper">
+            <div class="contacts__info">
+              <h2 data-name="title">Контакты</h2>
+              <p>Свяжитесь с&nbsp;нами любым удобным для вас способом или приходите к&nbsp;нам в&nbsp;гости.
+                Мы&nbsp;будем рады поделиться увлекательными историями и&nbsp;подобрать для вас тур.</p>
+              <ul aria-label="Список контактов.">
+                <li>
+                  <div class="contacts__item contacts__item--phone">
+                    <h3>Телефон</h3>
+                    <a href="tel:+79837454545">8&nbsp;983&nbsp;745&nbsp;45&nbsp;45</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="contacts__item contacts__item--mail">
+                    <h3>E-mail</h3>
+                    <a href="mailto:info@lifetour.com">info@lifetour.com</a>.
+                  </div>
+                </li>
+                <li>
+                  <div class="contacts__item contacts__item--address">
+                    <h3>Адрес</h3>
+                    <address>г.&nbsp;Москва, пр-т Мира, д.&nbsp;14, офис 101</address>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="contacts__map"></div>
+          </div>
         </div>
       </section>
 

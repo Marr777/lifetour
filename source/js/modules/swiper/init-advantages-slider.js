@@ -9,13 +9,14 @@ const setAdvantagesSlider = () => {
 
     wrapperClass: 'swiper-wrapper',
     slideClass: 'swiper-slide',
+    loop: true,
 
     breakpoints: {
       1200: {
         spaceBetween: 30,
-        initialSlide: 1,
-        slidesPerView: 3,
-        slidesOffsetBefore: 200,
+        initialSlide: 2,
+        centeredSlides: true,
+        slidesPerView: 3.6,
       },
     },
 
