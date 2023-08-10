@@ -120,4 +120,3 @@ export const initSwiper = () => {
   feedbackSwiper.enable();
   gallerySwiper.enable();
 };
-

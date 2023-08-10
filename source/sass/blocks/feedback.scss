@@ -50,7 +50,7 @@
   grid-template-columns: max-content auto;
   column-gap: 30px;
 
-  box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.10);
+  box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
 
   @include vp-1199 {
     width: 560px;

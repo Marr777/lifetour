@@ -7,6 +7,8 @@ import {initVideo} from './modules/init-video.js/init-video';
 import {initMobileMenu} from './modules/mobile-menu/mobile-menu';
 import {setStars} from './modules/star-rating/star-rating';
 import {initAdvantagesSlider} from './modules/swiper/init-advantages-slider';
+import {setMap} from './modules/map/set-map';
+
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -29,6 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initMobileMenu();
     initVideo();
     initAdvantagesSlider();
+    setMap();
 
     const form = new Form();
     window.form = form;
