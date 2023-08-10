@@ -16,7 +16,7 @@ const setAdvantagesSlider = () => {
         spaceBetween: 30,
         initialSlide: 2,
         centeredSlides: true,
-        slidesPerView: 3.6,
+        slidesPerView: 'auto',
       },
     },
 
