@@ -77,11 +77,14 @@
   row-gap: 15px;
 
   box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
+  background-color: $color-default-white;
 
   picture,
   img {
     grid-column: 1/-1;
     height: 212px;
+    width: 100%;
+    object-fit: contain;
   }
 
   h4 {
@@ -106,7 +109,6 @@
 
   @include vp-1199 {
     padding: 15px;
-    max-width: 206px;
     min-height: 412px;
   }
 
@@ -225,7 +227,7 @@
         order: 2;
         bottom: unset;
 
-        width: calc(46% + 46px);
+        width: calc(46% + 49px);
         height: 54px;
         margin: 0;
 

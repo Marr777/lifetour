@@ -51,6 +51,11 @@
     }
 
     @include vp-767 {
+      top: 2.6%;
+
+      max-width: 372px;
+      max-height: 622px;
+
       background-image: url("../img/tours/clouds-mobile.png");
       background-size: 54.2% auto;
 
@@ -74,6 +79,10 @@
     background-image: url("../img/tours/small-clouds.png");
 
     content: "";
+
+    @include vp-1199 {
+      display: none;
+    }
   }
 }
 

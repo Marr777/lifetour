@@ -1,6 +1,43 @@
 .advantages {
+  position: relative;
+
   padding-top: 96px;
   padding-bottom: 35px;
+
+  &::after {
+    position: absolute;
+    top: 6%;
+    right: 0;
+
+    width: 41.6%;
+    height: 51%;
+
+    background-image: url("../img/advantages/clouds.png");
+    background-repeat: no-repeat;
+
+    content: "";
+  }
+
+  &::before {
+    position: absolute;
+    top: -23%;
+    left: 0;
+
+    width: 41.6%;
+    height: 51%;
+
+    background-image: url("../img/advantages/clouds-left.png");
+    background-repeat: no-repeat;
+
+    content: "";
+  }
+
+  &::after,
+  &::before {
+    @include vp-1199 {
+      display: none;
+    }
+  }
 
   h2 {
     @include title;
@@ -86,6 +123,7 @@
   row-gap: 17px;
 
   border: 1px solid rgba(2, 102, 193, 0.1);
+  background-color: $color-default-white;
 
   svg {
     @include vp-1199 {

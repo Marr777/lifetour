@@ -1,10 +1,32 @@
 .about {
+  position: relative;
+
   padding-bottom: 107px;
 
   background-image: url("../img/about/bg-desktop.png");
   background-position: left 56%;
   background-repeat: no-repeat;
   background-size: 56%;
+
+  &::before {
+    position: absolute;
+    right: 0;
+    top: -22%;
+
+    width: 50%;
+    height: 51%;
+
+    background-image: url("../img/trainers/clouds.png");
+    background-position-x: 98px;
+    background-size: 87% 100%;
+    background-repeat: no-repeat;
+
+    content: "";
+
+    @include vp-1199 {
+      display: none;
+    }
+  }
 
   @include vp-1199 {
     padding-bottom: 23px;

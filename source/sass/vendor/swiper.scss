@@ -57,7 +57,7 @@
   transition-property: transform;
 }
 
-.swiper__slide-invisible-blank {
+.swiper-slide-invisible-blank {
   visibility: hidden;
 }
 
@@ -80,20 +80,20 @@
 
 .swiper-3d .swiper__wrapper,
 .swiper-3d .swiper__slide,
-.swiper-3d .swiper__slide-shadow,
-.swiper-3d .swiper__slide-shadow-left,
-.swiper-3d .swiper__slide-shadow-right,
-.swiper-3d .swiper__slide-shadow-top,
-.swiper-3d .swiper__slide-shadow-bottom,
+.swiper-3d .swiper-slide-shadow,
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right,
+.swiper-3d .swiper-slide-shadow-top,
+.swiper-3d .swiper-slide-shadow-bottom,
 .swiper-3d .swiper-cube-shadow {
   transform-style: preserve-3d;
 }
 
-.swiper-3d .swiper__slide-shadow,
-.swiper-3d .swiper__slide-shadow-left,
-.swiper-3d .swiper__slide-shadow-right,
-.swiper-3d .swiper__slide-shadow-top,
-.swiper-3d .swiper__slide-shadow-bottom {
+.swiper-3d .swiper-slide-shadow,
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right,
+.swiper-3d .swiper-slide-shadow-top,
+.swiper-3d .swiper-slide-shadow-bottom {
   position: absolute;
   left: 0;
   top: 0;
@@ -103,23 +103,23 @@
   z-index: 10;
 }
 
-.swiper-3d .swiper__slide-shadow {
+.swiper-3d .swiper-slide-shadow {
   background: rgba(0, 0, 0, 0.15);
 }
 
-.swiper-3d .swiper__slide-shadow-left {
+.swiper-3d .swiper-slide-shadow-left {
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 }
 
-.swiper-3d .swiper__slide-shadow-right {
+.swiper-3d .swiper-slide-shadow-right {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 }
 
-.swiper-3d .swiper__slide-shadow-top {
+.swiper-3d .swiper-slide-shadow-top {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 }
 
-.swiper-3d .swiper__slide-shadow-bottom {
+.swiper-3d .swiper-slide-shadow-bottom {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 }
 
@@ -269,16 +269,6 @@
 
 .swiper-pagination.swiper-pagination-hidden {
   opacity: 0;
-}
-
-/* Common Styles */
-.swiper-pagination-fraction,
-.swiper-pagination-custom,
-.swiper-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: 10px;
-  left: 0;
-  width: 100%;
 }
 
 /* Bullets */
@@ -500,7 +490,7 @@ button.swiper-pagination-bullet {
   object-fit: contain;
 }
 
-.swiper__slide-zoomed {
+.swiper-slide-zoomed {
   cursor: move;
 }
 
@@ -564,17 +554,14 @@ button.swiper-pagination-bullet {
 .swiper-fade.swiper-free-mode .swiper__slide {
   transition-timing-function: ease-out;
 }
-
 .swiper-fade .swiper__slide {
   pointer-events: none;
   transition-property: opacity;
 }
-
 .swiper-fade .swiper__slide {
   pointer-events: none;
 }
-
-.swiper-fade .swiper__slide-active {
+.swiper-fade .swiper-slide-active {
   pointer-events: auto;
 }
 
@@ -601,23 +588,23 @@ button.swiper-pagination-bullet {
   transform-origin: 100% 0;
 }
 
-.swiper-cube .swiper__slide-active,
-.swiper-cube .swiper__slide-active {
+.swiper-cube .swiper-slide-active,
+.swiper-cube .swiper-slide-active {
   pointer-events: auto;
 }
 
-.swiper-cube .swiper__slide-active,
-.swiper-cube .swiper__slide-next,
-.swiper-cube .swiper__slide-prev,
-.swiper-cube .swiper__slide-next+.swiper__slide {
+.swiper-cube .swiper-slide-active,
+.swiper-cube .swiper-slide-next,
+.swiper-cube .swiper-slide-prev,
+.swiper-cube .swiper-slide-next+.swiper__slide {
   pointer-events: auto;
   visibility: visible;
 }
 
-.swiper-cube .swiper__slide-shadow-top,
-.swiper-cube .swiper__slide-shadow-bottom,
-.swiper-cube .swiper__slide-shadow-left,
-.swiper-cube .swiper__slide-shadow-right {
+.swiper-cube .swiper-slide-shadow-top,
+.swiper-cube .swiper-slide-shadow-bottom,
+.swiper-cube .swiper-slide-shadow-left,
+.swiper-cube .swiper-slide-shadow-right {
   z-index: 0;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -659,14 +646,14 @@ button.swiper-pagination-bullet {
   pointer-events: none;
 }
 
-.swiper-flip .swiper__slide-active {
+.swiper-flip .swiper-slide-active {
   pointer-events: auto;
 }
 
-.swiper-flip .swiper__slide-shadow-top,
-.swiper-flip .swiper__slide-shadow-bottom,
-.swiper-flip .swiper__slide-shadow-left,
-.swiper-flip .swiper__slide-shadow-right {
+.swiper-flip .swiper-slide-shadow-top,
+.swiper-flip .swiper-slide-shadow-bottom,
+.swiper-flip .swiper-slide-shadow-left,
+.swiper-flip .swiper-slide-shadow-right {
   z-index: 0;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;

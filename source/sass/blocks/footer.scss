@@ -45,12 +45,16 @@
 
     list-style: none;
 
+    transform: translateY(4px);
+
     @include vp-1199 {
       justify-content: unset;
       gap: 20px;
 
       font-size: 14px;
       line-height: 14px;
+
+      transform: none;
     }
 
     @include vp-767 {
