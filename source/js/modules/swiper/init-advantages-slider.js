@@ -7,8 +7,8 @@ const setAdvantagesSlider = () => {
   advantagesSwiper = new Swiper('.advantages__swiper', {
     keyboard: true,
 
-    wrapperClass: 'swiper-wrapper',
-    slideClass: 'swiper-slide',
+    wrapperClass: 'swiper__wrapper',
+    slideClass: 'swiper__slide',
     loop: true,
 
     breakpoints: {

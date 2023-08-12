@@ -12,15 +12,15 @@ export const initSwiper = () => {
     keyboard: true,
     effect: 'fade',
 
-    wrapperClass: 'swiper-wrapper',
-    slideClass: 'swiper-slide',
+    wrapperClass: 'swiper__wrapper',
+    slideClass: 'swiper__slide',
   });
 
   const toursSwiper = new Swiper('.tours__swiper', {
     keyboard: true,
 
-    wrapperClass: 'swiper-wrapper',
-    slideClass: 'swiper-slide',
+    wrapperClass: 'swiper__wrapper',
+    slideClass: 'swiper__slide',
 
     breakpoints: {
       1280: {
@@ -51,8 +51,8 @@ export const initSwiper = () => {
   const trainingSwiper = new Swiper('.training__swiper', {
     keyboard: true,
 
-    wrapperClass: 'swiper-wrapper',
-    slideClass: 'swiper-slide',
+    wrapperClass: 'swiper__wrapper',
+    slideClass: 'swiper__slide',
 
     breakpoints: {
       1280: {
@@ -79,8 +79,8 @@ export const initSwiper = () => {
   const feedbackSwiper = new Swiper('.feedback__swiper', {
     keyboard: true,
 
-    wrapperClass: 'swiper-wrapper',
-    slideClass: 'swiper-slide',
+    wrapperClass: 'swiper__wrapper',
+    slideClass: 'swiper__slide',
 
     spaceBetween: 30,
     slidesPerView: 'auto',
@@ -94,8 +94,8 @@ export const initSwiper = () => {
   const gallerySwiper = new Swiper('.gallery__swiper', {
     keyboard: true,
 
-    wrapperClass: 'swiper-wrapper',
-    slideClass: 'swiper-slide',
+    wrapperClass: 'swiper__wrapper',
+    slideClass: 'swiper__slide',
 
     breakpoints: {
       768: {

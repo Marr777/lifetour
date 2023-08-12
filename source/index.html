@@ -8,6 +8,10 @@
   <meta name="description" content="Сайт туристической компании LifeTour">
   <title>LifeTour</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/favicon180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat-bold.woff2" as="font" crossorigin="anonymous">
 </head>
@@ -58,8 +62,8 @@
       <section class="hero">
         <h2 class="visually-hidden">Промо-туры.</h2>
         <div class="hero__swiper swiper">
-          <ul class="hero__slides swiper-wrapper" aria-label="Список промо-туров.">
-            <li class="hero__slide hero-slide hero-slide--one swiper-slide">
+          <ul class="hero__slides swiper__wrapper" aria-label="Список промо-туров.">
+            <li class="hero__slide hero-slide hero-slide--one swiper__slide">
               <div class="container container--hero">
                 <h3>Захватывающие <br>вершины Кавказа</h3>
                 <p>В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете через потрясающие ландшафты и&nbsp;совершите
@@ -89,7 +93,7 @@
                 </div>
               </div>
             </li>
-            <li class="hero__slide hero-slide hero-slide--two swiper-slide">
+            <li class="hero__slide hero-slide hero-slide--two swiper__slide">
               <div class="container container--hero">
                 <h3>Невероятная <br>природа Камчатки</h3>
                 <p>Незабываемое приключение, во&nbsp;время которого вы&nbsp;отправитесь в&nbsp;путешествие
@@ -120,7 +124,7 @@
                 </div>
               </div>
             </li>
-            <li class="hero__slide hero-slide hero-slide--three swiper-slide">
+            <li class="hero__slide hero-slide hero-slide--three swiper__slide">
               <div class="container container--hero">
                 <h3>Магические пейзажи <br>Алтайского Края</h3>
                 <p>Алтайский трекинг&#8209;тур&nbsp;- это&nbsp;захватывающее приключение с&nbsp;посещением магических
@@ -161,8 +165,8 @@
               </button>
             </div>
             <div class="tours__swiper swiper slider-swiper">
-              <ul class="swiper-wrapper">
-                <li class="swiper-slide">
+              <ul class="swiper__wrapper">
+                <li class="swiper__slide">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)"
                       srcset="img/tours/elbrus-mobile.webp 1x, img/tours/elbrus-mobile@2x.webp 2x" width="290"
@@ -219,7 +223,7 @@
                     </dl>
                   </div>
                 </li>
-                <li class="swiper-slide">
+                <li class="swiper__slide">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)"
                       srcset="img/tours/beluha-mobile.webp 1x, img/tours/beluha-mobile@2x.webp 2x" width="290"
@@ -275,7 +279,7 @@
                     </dl>
                   </div>
                 </li>
-                <li class="swiper-slide">
+                <li class="swiper__slide">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)"
                       srcset="img/tours/fisht-mobile.webp 1x, img/tours/fisht-mobile@2x.webp 2x" width="290"
@@ -329,7 +333,7 @@
                     </dl>
                   </div>
                 </li>
-                <li class="swiper-slide">
+                <li class="swiper__slide">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)"
                       srcset="img/tours/elbrus-mobile.webp 1x, img/tours/elbrus-mobile@2x.webp 2x" width="290"
@@ -386,7 +390,7 @@
                     </dl>
                   </div>
                 </li>
-                <li class="swiper-slide">
+                <li class="swiper__slide">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)"
                       srcset="img/tours/beluha-mobile.webp 1x, img/tours/beluha-mobile@2x.webp 2x" width="290"
@@ -442,7 +446,7 @@
                     </dl>
                   </div>
                 </li>
-                <li class="swiper-slide">
+                <li class="swiper__slide">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)"
                       srcset="img/tours/fisht-mobile.webp 1x, img/tours/fisht-mobile@2x.webp 2x" width="290"
@@ -529,8 +533,8 @@
               </button>
             </div>
             <div class="training__swiper swiper slider-swiper">
-              <ul class="swiper-wrapper">
-                <li class="swiper-slide">
+              <ul class="swiper__wrapper">
+                <li class="swiper__slide">
                   <div class="training__card">
                     <picture>
                       <source type="image/webp" media="(max-width: 767px)"
@@ -552,7 +556,7 @@
                         width="238" height="212" alt="Александр Прокофьев.">
                     </picture>
                     <h4>Александр <br>Прокофьев</h4>
-                    <a class="training__card-vk" href="#" aria-label="Ссылка на страницу в контакте.">
+                    <a href="#" aria-label="Ссылка на страницу в контакте.">
                       <svg width="16" height="9" viewBox="0 0 16 9">
                         <use href="img/sprite.svg#vk" />
                       </svg>
@@ -560,7 +564,7 @@
                     <p>Строгий и&nbsp;внимательный инструктор, веселый и&nbsp;общительный человек. Любит природу.</p>
                   </div>
                 </li>
-                <li class="swiper-slide">
+                <li class="swiper__slide">
                   <div class="training__card">
                     <picture>
                       <source type="image/webp" media="(max-width: 767px)"
@@ -582,7 +586,7 @@
                         width="238" height="212" alt="Светлана Афиногенова.">
                     </picture>
                     <h4>Светлана <br>Афиногенова</h4>
-                    <a class="training__card-vk" href="#" aria-label="Ссылка на страницу в контакте.">
+                    <a href="#" aria-label="Ссылка на страницу в контакте.">
                       <svg width="16" height="9" viewBox="0 0 16 9">
                         <use href="img/sprite.svg#vk" />
                       </svg>
@@ -591,7 +595,7 @@
                       чувствовать&nbsp;&mdash; в&nbsp;этом назначение жизни.</p>
                   </div>
                 </li>
-                <li class="swiper-slide">
+                <li class="swiper__slide">
                   <div class="training__card">
                     <picture>
                       <source type="image/webp" media="(max-width: 767px)"
@@ -613,7 +617,7 @@
                         width="238" height="212" alt="Надежда Колесниченко.">
                     </picture>
                     <h4>Надежда <br>Колесниченко</h4>
-                    <a class="training__card-vk" href="#" aria-label="Ссылка на страницу в контакте.">
+                    <a href="#" aria-label="Ссылка на страницу в контакте.">
                       <svg width="16" height="9" viewBox="0 0 16 9">
                         <use href="img/sprite.svg#vk" />
                       </svg>
@@ -622,7 +626,7 @@
                       с&nbsp;ней чувствуешь себя спокойно и&nbsp;уверенно.</p>
                   </div>
                 </li>
-                <li class="swiper-slide">
+                <li class="swiper__slide">
                   <div class="training__card">
                     <picture>
                       <source type="image/webp" media="(max-width: 767px)"
@@ -644,7 +648,7 @@
                         height="212" alt="Федор Кайгородов.">
                     </picture>
                     <h4>Федор <br>Кайгородов</h4>
-                    <a class="training__card-vk" href="#" aria-label="Ссылка на страницу в контакте.">
+                    <a href="#" aria-label="Ссылка на страницу в контакте.">
                       <svg width="16" height="9" viewBox="0 0 16 9">
                         <use href="img/sprite.svg#vk" />
                       </svg>
@@ -653,7 +657,7 @@
                       районах Хибины, Архыз, много путешествует по&nbsp;Европе.</p>
                   </div>
                 </li>
-                <li class="swiper-slide">
+                <li class="swiper__slide">
                   <div class="training__card">
                     <picture>
                       <source type="image/webp" media="(max-width: 767px)"
@@ -675,7 +679,7 @@
                         width="238" height="212" alt="Александр Прокофьев.">
                     </picture>
                     <h4>Александр <br>Прокофьев</h4>
-                    <a class="training__card-vk" href="#" aria-label="Ссылка на страницу в контакте.">
+                    <a href="#" aria-label="Ссылка на страницу в контакте.">
                       <svg width="16" height="9" viewBox="0 0 16 9">
                         <use href="img/sprite.svg#vk" />
                       </svg>
@@ -683,7 +687,7 @@
                     <p>Строгий и&nbsp;внимательный инструктор, веселый и&nbsp;общительный человек. Любит природу.</p>
                   </div>
                 </li>
-                <li class="swiper-slide">
+                <li class="swiper__slide">
                   <div class="training__card">
                     <picture>
                       <source type="image/webp" media="(max-width: 767px)"
@@ -705,7 +709,7 @@
                         width="238" height="212" alt="Светлана Афиногенова.">
                     </picture>
                     <h4>Светлана <br>Афиногенова</h4>
-                    <a class="training__card-vk" href="#" aria-label="Ссылка на страницу в контакте.">
+                    <a href="#" aria-label="Ссылка на страницу в контакте.">
                       <svg width="16" height="9" viewBox="0 0 16 9">
                         <use href="img/sprite.svg#vk" />
                       </svg>
@@ -714,7 +718,7 @@
                       чувствовать&nbsp;&mdash; в&nbsp;этом назначение жизни.</p>
                   </div>
                 </li>
-                <li class="swiper-slide">
+                <li class="swiper__slide">
                   <div class="training__card">
                     <picture>
                       <source type="image/webp" media="(max-width: 767px)"
@@ -736,7 +740,7 @@
                         width="238" height="212" alt="Надежда Колесниченко.">
                     </picture>
                     <h4>Надежда <br>Колесниченко</h4>
-                    <a class="training__card-vk" href="#" aria-label="Ссылка на страницу в контакте.">
+                    <a href="#" aria-label="Ссылка на страницу в контакте.">
                       <svg width="16" height="9" viewBox="0 0 16 9">
                         <use href="img/sprite.svg#vk" />
                       </svg>
@@ -745,7 +749,7 @@
                       с&nbsp;ней чувствуешь себя спокойно и&nbsp;уверенно.</p>
                   </div>
                 </li>
-                <li class="swiper-slide">
+                <li class="swiper__slide">
                   <div class="training__card">
                     <picture>
                       <source type="image/webp" media="(max-width: 767px)"
@@ -767,7 +771,7 @@
                         height="212" alt="Федор Кайгородов.">
                     </picture>
                     <h4>Федор <br>Кайгородов</h4>
-                    <a class="training__card-vk" href="#" aria-label="Ссылка на страницу в контакте.">
+                    <a href="#" aria-label="Ссылка на страницу в контакте.">
                       <svg width="16" height="9" viewBox="0 0 16 9">
                         <use href="img/sprite.svg#vk" />
                       </svg>
@@ -846,8 +850,8 @@
           </div>
         </div>
         <div class="feedback__swiper swiper slider-swiper">
-          <ul class="swiper-wrapper">
-            <li class="swiper-slide">
+          <ul class="swiper__wrapper">
+            <li class="swiper__slide">
               <div class="feedback__card">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)"
@@ -885,7 +889,7 @@
                 </div>
               </div>
             </li>
-            <li class="swiper-slide">
+            <li class="swiper__slide">
               <div class="feedback__card">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)"
@@ -923,7 +927,7 @@
                 </div>
               </div>
             </li>
-            <li class="swiper-slide">
+            <li class="swiper__slide">
               <div class="feedback__card">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)"
@@ -962,7 +966,7 @@
                 </div>
               </div>
             </li>
-            <li class="swiper-slide">
+            <li class="swiper__slide">
               <div class="feedback__card">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)"
@@ -1008,8 +1012,8 @@
         <div class="advantages__wrapper slider">
           <h2 data-name="title">Преимущества</h2>
           <div class="advantages__swiper swiper">
-            <ul class="swiper-wrapper">
-              <li class="swiper-slide">
+            <ul class="swiper__wrapper">
+              <li class="swiper__slide">
                 <div class="advantages__card">
                   <svg width="54" height="54" viewBox="0 0 54 54">
                     <use href="img/sprite.svg#safety" />
@@ -1020,7 +1024,7 @@
                     безопасности во&nbsp;время всего тура.</p>
                 </div>
               </li>
-              <li class="swiper-slide">
+              <li class="swiper__slide">
                 <div class="advantages__card">
                   <svg width="54" height="54" viewBox="0 0 54 54">
                     <use href="img/sprite.svg#knowledge" />
@@ -1031,7 +1035,7 @@
                     в&nbsp;полной мере насладиться опытом без опасений.</p>
                 </div>
               </li>
-              <li class="swiper-slide">
+              <li class="swiper__slide">
                 <div class="advantages__card">
                   <svg width="54" height="54" viewBox="0 0 54 54">
                     <use href="img/sprite.svg#supply" />
@@ -1042,7 +1046,7 @@
                     путешествие более удобным и&nbsp;экономически выгодным.</p>
                 </div>
               </li>
-              <li class="swiper-slide">
+              <li class="swiper__slide">
                 <div class="advantages__card">
                   <svg width="54" height="54" viewBox="0 0 54 54">
                     <use href="img/sprite.svg#route" />
@@ -1053,7 +1057,7 @@
                     чтобы&nbsp;вы получили индивидуальный опыт.</p>
                 </div>
               </li>
-              <li class="swiper-slide">
+              <li class="swiper__slide">
                 <div class="advantages__card">
                   <svg width="54" height="54" viewBox="0 0 54 54">
                     <use href="img/sprite.svg#eco" />
@@ -1105,8 +1109,8 @@
           </div>
         </div>
         <div class="gallery__swiper swiper slider-swiper">
-          <ul class="swiper-wrapper">
-            <li class="swiper-slide">
+          <ul class="swiper__wrapper">
+            <li class="swiper__slide">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)"
                   srcset="img/gallery/photo1-mobile.webp 1x, img/gallery/photo1-mobile@2x.webp 2x" width="159"
@@ -1121,7 +1125,7 @@
                   height="449" alt="Фотография из галереи.">
               </picture>
             </li>
-            <li class="swiper-slide">
+            <li class="swiper__slide">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)"
                   srcset="img/gallery/photo2-mobile.webp 1x, img/gallery/photo2-mobile@2x.webp 2x" width="172"
@@ -1136,7 +1140,7 @@
                   height="179" alt="Фотография из галереи.">
               </picture>
             </li>
-            <li class="swiper-slide">
+            <li class="swiper__slide">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)"
                   srcset="img/gallery/photo3-mobile.webp 1x, img/gallery/photo3-mobile@2x.webp 2x" width="172"
@@ -1151,7 +1155,7 @@
                   height="265" alt="Фотография из галереи.">
               </picture>
             </li>
-            <li class="swiper-slide">
+            <li class="swiper__slide">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)"
                   srcset="img/gallery/photo4-mobile.webp 1x, img/gallery/photo4-mobile@2x.webp 2x" width="157"
@@ -1166,7 +1170,7 @@
                   height="449" alt="Фотография из галереи.">
               </picture>
             </li>
-            <li class="swiper-slide">
+            <li class="swiper__slide">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)"
                   srcset="img/gallery/photo5-mobile.webp 1x, img/gallery/photo5-mobile@2x.webp 2x" width="172"
@@ -1181,7 +1185,7 @@
                   height="179" alt="Фотография из галереи.">
               </picture>
             </li>
-            <li class="swiper-slide">
+            <li class="swiper__slide">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)"
                   srcset="img/gallery/photo6-mobile.webp 1x, img/gallery/photo6-mobile@2x.webp 2x" width="172"
@@ -1196,7 +1200,7 @@
                   height="265" alt="Фотография из галереи.">
               </picture>
             </li>
-            <li class="swiper-slide">
+            <li class="swiper__slide">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)"
                   srcset="img/gallery/photo7-mobile.webp 1x, img/gallery/photo7-mobile@2x.webp 2x" width="159"
@@ -1339,7 +1343,6 @@
       </div>
     </footer>
   </div>
-
   <template id="star-rating">
     <svg width="15" height="14" viewBox="0 0 15 14" aria-hidden="true" focusable="false">
       <use href="img/sprite.svg#tours-star" />
@@ -1357,7 +1360,6 @@
       <use href="img/sprite.svg#tours-star" />
     </svg>
   </template>
-
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
