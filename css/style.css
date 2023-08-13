@@ -2438,6 +2438,10 @@ button,
   fill: #ffffff;
 }
 
+.header__nav--open {
+  overflow-y: scroll;
+}
+
 .header__nav ul {
   padding: 0;
   margin: 0;
@@ -4231,6 +4235,10 @@ button,
     cursor: auto;
   }
 
+  .header--open .header__logo-link {
+    margin-left: 99px;
+  }
+
   .header__wrapper {
     display: -ms-grid;
     display: grid;
@@ -4257,6 +4265,11 @@ button,
 
   .header__logo-link--open svg {
     fill: #2d383f;
+  }
+
+  .header__nav--open {
+    max-height: 226px;
+    grid-column: 1/-1;
   }
 
   .header__nav {
@@ -4988,8 +5001,7 @@ button,
 
 @media (max-width: 1199px) and (max-width: 767px) {
   .header__nav ul {
-    margin-top: 41px;
-    row-gap: 23px;
+    row-gap: 22px;
     font-size: 14px;
     line-height: 14px;
     letter-spacing: 0.56px;
@@ -5034,7 +5046,17 @@ button,
   }
 
   .header--open .header__inner {
-    padding: 15px 0 47px;
+    padding: 15px 0 52px;
+  }
+
+  .header--open .header__logo-link {
+    margin-left: 0;
+  }
+
+  .header--open .header__phone-link {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
   }
 
   .header__wrapper {
@@ -5046,6 +5068,17 @@ button,
   .header__logo-link svg {
     width: 112px;
     height: 34px;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+
+  .header__nav--open {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    margin-top: 28px;
+    max-height: 240px;
   }
 
   .header__phone-link {
