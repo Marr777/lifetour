@@ -23,10 +23,10 @@ window.addEventListener('DOMContentLoaded', () => {
     initAdvantagesSlider();
     setMap();
 
-    if (document.querySelector('form')) {
-      const form = new Form();
+    const form = new Form();
+    if (window.form) {
       window.form = form;
-      form.init();
     }
+    form.init();
   });
 });
