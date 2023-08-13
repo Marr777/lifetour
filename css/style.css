@@ -4528,6 +4528,8 @@ button,
   }
 
   .training__card p {
+    width: 100%;
+    margin-bottom: 0;
     line-height: 18px;
   }
 
@@ -5243,6 +5245,12 @@ button,
 
   .training__swiper {
     padding-bottom: 28px;
+  }
+
+  .training__card p {
+    font-size: 12px;
+    margin-bottom: 0;
+    line-height: 18px;
   }
 
   .training__card {
