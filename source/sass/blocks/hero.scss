@@ -32,6 +32,12 @@
   justify-content: end;
   padding-right: 120px;
 
+  &:focus,
+  &:focus-visible {
+    outline: none;
+    border: none;
+  }
+
   @include vp-1199 {
     bottom: 89px;
 

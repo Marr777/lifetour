@@ -175,12 +175,15 @@
 }
 
 .form__btn {
-  padding: 20px 0;
+  padding: 20px;
   min-width: 238px;
+  max-width: 238px;
+  word-wrap: break-word;
 
   @include vp-1199 {
     margin-top: 7px;
     padding: 21px 0;
+    max-width: unset;
   }
 
   @include vp-767 {

@@ -10,7 +10,7 @@ export const initSwiper = () => {
       clickable: true,
     },
     keyboard: true,
-    effect: 'fade',
+    centeredSlides: true,
 
     wrapperClass: 'swiper__wrapper',
     slideClass: 'swiper__slide',
@@ -102,7 +102,7 @@ export const initSwiper = () => {
         spaceBetween: 6,
       },
       320: {
-        spaceBetween: 3,
+        spaceBetween: 0,
       },
     },
 
@@ -119,4 +119,15 @@ export const initSwiper = () => {
   trainingSwiper.enable();
   feedbackSwiper.enable();
   gallerySwiper.enable();
+
+  const heroSlides = document.querySelectorAll('.hero__slide');
+
+  heroSlides.forEach((slide) => {
+    slide.addEventListener('focus', () => {
+      const slideIndex = Number(slide.getAttribute('aria-label')[0]) - 1;
+      if (slideIndex > 0 && slideIndex < 3) {
+        heroSwiper.slideTo(slideIndex, 300, true);
+      }
+    });
+  });
 };

@@ -138,16 +138,23 @@
     @include vp-767 {
       line-height: 20px;
     }
+
+    &:focus,
+    &:focus-visible {
+      outline-color: $color-default-black;
+    }
   }
 }
 
 .contacts__map {
   height: 324px;
   width: 100%;
-  align-self: flex-end;
+  align-self: start;
+  margin-top: 77px;
 
   @include vp-1199 {
     height: 340px;
+    margin-top: 0;
   }
 
   @include vp-767 {
