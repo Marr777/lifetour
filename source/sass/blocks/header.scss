@@ -62,12 +62,6 @@
         margin-left: 0;
       }
     }
-
-    .header__phone-link {
-      @include vp-767 {
-        grid-row: 2/3;
-      }
-    }
   }
 }
 
