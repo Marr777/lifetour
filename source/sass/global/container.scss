@@ -5,6 +5,14 @@
   margin: 0 auto;
   padding: 0 120px;
 
+  @include vp-1199 {
+    padding: 0 45px;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+  }
+
   &--hero {
     display: grid;
     grid-auto-flow: row;
@@ -12,6 +20,7 @@
     margin-top: 75px;
 
     @include vp-1199 {
+      padding: 0 45px 142px;
       margin-top: 92px;
       display: flex;
       flex-direction: column;
@@ -19,15 +28,8 @@
     }
 
     @include vp-767 {
+      padding: 0 15px 74px;
       margin-top: 66px;
     }
-  }
-
-  @include vp-1199 {
-    padding: 0 45px;
-  }
-
-  @include vp-767 {
-    padding: 0 15px;
   }
 }

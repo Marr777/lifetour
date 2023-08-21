@@ -2101,6 +2101,16 @@ button,
   margin: 0 auto;
   padding: 0 120px;
 }
+@media (max-width: 1199px) {
+  .container {
+    padding: 0 45px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    padding: 0 15px;
+  }
+}
 .container--hero {
   display: -ms-grid;
   display: grid;
@@ -2111,6 +2121,7 @@ button,
 }
 @media (max-width: 1199px) {
   .container--hero {
+    padding: 0 45px 142px;
     margin-top: 92px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2126,17 +2137,8 @@ button,
 }
 @media (max-width: 767px) {
   .container--hero {
+    padding: 0 15px 74px;
     margin-top: 66px;
-  }
-}
-@media (max-width: 1199px) {
-  .container {
-    padding: 0 45px;
-  }
-}
-@media (max-width: 767px) {
-  .container {
-    padding: 0 15px;
   }
 }
 
