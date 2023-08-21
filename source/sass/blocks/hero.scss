@@ -1,3 +1,9 @@
+.hero {
+  margin-top: -107px;
+
+  background-color: $color-secondary;
+}
+
 .hero__slides {
   margin: 0;
   padding: 0;
@@ -7,7 +13,7 @@
 
 .hero__slide {
   padding-top: 182px;
-  padding-bottom: 80px;
+  padding-bottom: 78px;
   min-height: 800px;
 
   @include vp-1199 {

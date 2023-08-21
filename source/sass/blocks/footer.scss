@@ -16,14 +16,15 @@
 .footer__wrapper {
   width: 100%;
   display: grid;
-  grid-template-columns: 205px 57% auto;
-  row-gap: 18px;
+  grid-template-columns: 205px 1fr auto;
+  gap: 18px;
   align-items: center;
 
   @include vp-1199 {
     grid-template-columns: max-content 70%;
     justify-content: space-between;
     row-gap: 20px;
+    column-gap: unset;
   }
 
   @include vp-767 {
@@ -37,24 +38,27 @@
 }
 
 .footer__links {
-  margin-left: 15%;
+  margin-left: 10.1%;
   transform: translateY(-3px);
 
   ul {
     margin: 0;
     padding: 0;
-    display: grid;
-    grid-template-columns: repeat(6, auto);
-    row-gap: 10px;
-    justify-content: space-between;
+    display: flex;
+    gap: 4.6%;
+    flex-wrap: wrap;
 
     list-style: none;
 
     transform: translateY(4px);
 
+    @media (max-width: 1228px) {
+      gap: 3.6%;
+    }
+
     @include vp-1199 {
       justify-content: unset;
-      gap: 13px;
+      gap: 20px;
 
       font-size: 14px;
       line-height: 14px;
@@ -71,6 +75,10 @@
       column-gap: 48px;
     }
   }
+
+  // li {
+  //   width: 11%;
+  // }
 
   @include vp-1199 {
     margin-left: 0;
@@ -142,33 +150,38 @@
 }
 
 .footer__phone-link {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
   justify-self: end;
   grid-column: 3/4;
 
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 18px;
+  a {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
 
-  @include hover-focus {
-    color: $color-active;
+    @include hover-focus {
+      color: $color-active;
+
+      &:active {
+        color: $color-secondary;
+      }
+    }
 
     &:active {
       color: $color-secondary;
     }
-  }
 
-  &:active {
-    color: $color-secondary;
-  }
+    &:focus,
+    &:focus-visible {
+      outline: none;
+      color: $color-active;
+    }
 
-  &:focus,
-  &:focus-visible {
-    outline: none;
-    color: $color-active;
-  }
-
-  &:disabled {
-    color: rgba(2, 102, 193, 0.1);
+    &:disabled {
+      color: rgba(2, 102, 193, 0.1);
+    }
   }
 
   @include vp-1199 {

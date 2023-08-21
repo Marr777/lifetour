@@ -33,33 +33,30 @@
     right: 0;
 
     width: 100%;
-    height: 100%;
+    height: 150%;
 
     background-image: url("../img/tours/clouds.png");
     background-position: right;
     background-repeat: no-repeat;
     background-size: 41.8% auto;
 
-    transform: translateY(288px);
+    transform: translateY(476px);
     content: "";
 
     @include vp-1199 {
       background-image: url("../img/tours/clouds-tablet.png");
       background-size: 38% auto;
 
-      transform: translateY(241px);
+      transform: translateY(414px);
     }
 
     @include vp-767 {
       top: 2.6%;
 
-      max-width: 372px;
-      max-height: 622px;
-
       background-image: url("../img/tours/clouds-mobile.png");
       background-size: 54.2% auto;
 
-      transform: translateY(110px);
+      transform: translateY(-69px);
     }
   }
 }
@@ -99,9 +96,6 @@
 
     picture,
     img {
-      position: absolute;
-      z-index: -1;
-
       width: 100%;
       height: auto;
 
@@ -119,7 +113,14 @@
 }
 
 .tours__card {
+  position: absolute;
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
   width: 100%;
+  height: 100%;
   padding: 207px 20px 27px;
 
   background-image: $tour-overlay;
