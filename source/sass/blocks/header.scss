@@ -72,6 +72,7 @@
   display: grid;
   grid-template-columns: repeat(3, auto);
   justify-content: space-between;
+  column-gap: 20px;
   align-items: center;
 
   @include vp-1440 {
