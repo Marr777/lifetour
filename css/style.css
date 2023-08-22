@@ -2931,10 +2931,21 @@ button,
 }
 
 .tours__card h3 {
+  position: relative;
   margin: 0 0 36px;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
+}
+
+.tours__card h3::after {
+  position: absolute;
+  left: 0;
+  bottom: -18px;
+  content: "";
+  width: 80px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .tours__card dl {
@@ -4582,7 +4593,7 @@ button,
   }
 
   .tours {
-    padding-top: 83px;
+    padding-top: 80px;
   }
 
   .tours::after {
@@ -4599,6 +4610,11 @@ button,
 
   .tours__swiper {
     padding: 0 5px;
+  }
+
+  .tours__card h3::after {
+    bottom: -16px;
+    width: 79px;
   }
 
   .tours__card dl {
