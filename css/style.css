@@ -2432,6 +2432,9 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -4383,7 +4386,7 @@ button,
 
   .header--open .header__wrapper {
     row-gap: 43px;
-    max-height: 100vh;
+    max-height: calc(100vh - 30px);
   }
 
   .header__logo-link svg {
